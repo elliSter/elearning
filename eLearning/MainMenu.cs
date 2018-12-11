@@ -50,7 +50,8 @@ namespace eLearning
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            Practise practise = new Practise();
+            practise.Show();
         }
 
         private void button1_MouseEnter(object sender, EventArgs e)
@@ -60,7 +61,8 @@ namespace eLearning
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Test test = new Test();
+            test.Show();
         }
 
         private void button2_MouseEnter(object sender, EventArgs e)

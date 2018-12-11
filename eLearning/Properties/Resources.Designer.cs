@@ -63,9 +63,70 @@ namespace eLearning.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _51294762_happy_family_portrait_father_and_mother_son_and_daughter_grandparents_in_one_picture_together_vector {
+            get {
+                object obj = ResourceManager.GetObject("51294762-happy-family-portrait-father-and-mother-son-and-daughter-grandparents-in" +
+                        "-one-picture-together-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _795676_factsxores_680_353898_1R0295 {
+            get {
+                object obj = ResourceManager.GetObject("795676-factsxores-680_353898_1R0295", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap animal_selfies_thumbnail {
+            get {
+                object obj = ResourceManager.GetObject("animal-selfies-thumbnail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap back {
             get {
                 object obj = ResourceManager.GetObject("back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap file_20171024_30561_ph2byj {
+            get {
+                object obj = ResourceManager.GetObject("file-20171024-30561-ph2byj", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap img824539 {
+            get {
+                object obj = ResourceManager.GetObject("img824539", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap intro_cream_of_crop {
+            get {
+                object obj = ResourceManager.GetObject("intro_cream_of_crop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -104,9 +165,29 @@ namespace eLearning.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap low_calorie_fruit_1516368847 {
+            get {
+                object obj = ResourceManager.GetObject("low-calorie-fruit-1516368847", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap VisualEditor___Icon___Help_svg {
             get {
                 object obj = ResourceManager.GetObject("VisualEditor_-_Icon_-_Help.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap αρχείο_λήψης {
+            get {
+                object obj = ResourceManager.GetObject("αρχείο λήψης", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

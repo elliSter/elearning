@@ -67,7 +67,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(101, 51);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Reading Test";
+            this.button1.Text = "Εξάσκηση";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
@@ -83,7 +83,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(101, 51);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Listening Test";
+            this.button2.Text = "Test";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button2.MouseEnter += new System.EventHandler(this.button2_MouseEnter);

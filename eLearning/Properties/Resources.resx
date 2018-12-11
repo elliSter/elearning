@@ -118,19 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img824539" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img824539.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kisspng-cat-kitten-cuteness-clip-art-cat-5a6fd8f9b9efa9.3918944615172794817616" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-cat-kitten-cuteness-clip-art-cat-5a6fd8f9b9efa9.3918944615172794817616.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="VisualEditor_-_Icon_-_Help.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VisualEditor_-_Icon_-_Help.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="animal-selfies-thumbnail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\animal-selfies-thumbnail.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kisspng-youtube-play-button-computer-icons-clip-art-help-5ac448544305d0.3241900115228130122745" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kisspng-youtube-play-button-computer-icons-clip-art-help-5ac448544305d0.3241900115228130122745.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="low-calorie-fruit-1516368847" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\low-calorie-fruit-1516368847.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="kitty-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kitty-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="VisualEditor_-_Icon_-_Help.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\VisualEditor_-_Icon_-_Help.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kisspng-cat-kitten-cuteness-clip-art-cat-5a6fd8f9b9efa9.3918944615172794817616" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-cat-kitten-cuteness-clip-art-cat-5a6fd8f9b9efa9.3918944615172794817616.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file-20171024-30561-ph2byj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file-20171024-30561-ph2byj.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="795676-factsxores-680_353898_1R0295" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\795676-factsxores-680_353898_1R0295.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="51294762-happy-family-portrait-father-and-mother-son-and-daughter-grandparents-in-one-picture-together-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\51294762-happy-family-portrait-father-and-mother-son-and-daughter-grandparents-in-one-picture-together-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="intro_cream_of_crop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\intro_cream_of_crop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="αρχείο λήψης" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\αρχείο λήψης.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
