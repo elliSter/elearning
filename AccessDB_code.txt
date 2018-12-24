@@ -1,0 +1,34 @@
+//proupo8etei oti yparxei h vash mesa sto eLearning\bin\Debug h sto eLearning\  (To Database einai to wordDB.accdb)
+
+//___________INSERT___________
+
+ 	    string strSQL = "INSERT INTO Names123(ID,Field1) VALUES('10','KWSTAS')";
+            OleDbConnection conn = new OleDbConnection();
+            conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\wordDB.accdb";
+            conn.Open();
+            OleDbCommand command = new OleDbCommand(strSQL, conn);
+            //Console.WriteLine("ADADADADADADADADADA");
+            OleDbDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                Console.WriteLine(reader["Field1"].ToString());
+            }
+            reader.Close();
+            conn.Close();
+
+
+//___________SELECT___________
+
+	    string strSQL = "SELECT * FROM Names123";
+            OleDbConnection conn = new OleDbConnection();
+            conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\wordDB.accdb";
+            conn.Open();
+            OleDbCommand command = new OleDbCommand(strSQL, conn);
+            //Console.WriteLine("ADADADADADADADADADA");
+            OleDbDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                Console.WriteLine(reader["Field1"].ToString());
+            }
+            reader.Close();
+            conn.Close();
