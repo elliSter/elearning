@@ -1,0 +1,49 @@
+using System.Collections;
+using RestSharp;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+namespace eLearning
+{
+    public partial class TranslateTest : Form
+    {
+	class AppCache
+   	{
+        	string detectString = "hello";
+	        public static string API { get; } = 			@"trnsl.1.1.20181227T183529Z.558773be9cadc8fd.7fce028d3d43ff01201b4f584d71fc3ccffa862d";
+	        public static string UrlGetAvailableLanguages { get; } = 			@"https://translate.yandex.net/api/v1.5/tr.json/getLangs?key={0}&ui={1}";
+	        public static string UrlDetectSrcLanguage { get; } = 			@"https://translate.yandex.net/api/v1.5/tr.json/detect?key={0}&text={1}";
+	        public static string UrlTranslateLanguage { get; } = 			@"https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}&lang={2}";
+	        
+  	}
+
+	public TranslateTest()
+        {
+            InitializeComponent();
+        }
+
+	private IRestResponse RequestService(string strUrl)
+        {
+
+            var client = new RestClient()
+            {
+                BaseUrl = new Uri(strUrl)
+            };
+            var request = new RestRequest()
+            {
+                Method = Method.GET
+            };
+            return client.Execute(request);
+        }
+
+	private void translateB_Click(object sender, EventArgs e)
+        {
+	    string yo = "hello world";
+            string lo = "en-el";
+            var response = RequestService(string.Format(AppCache.UrlTranslateLanguage, AppCache.API, yo , lo));
+            var dict = JsonConvert.DeserializeObject<IDictionary>(response.Content);
+            var statusCode = dict["code"].ToString();
+	    if (statusCode.Equals("200"))
+            {
+                translateText.Text = string.Join(",", dict["text"]);
+	    }
+	}
