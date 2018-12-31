@@ -1,0 +1,82 @@
+private IRestResponse RequestService(string strUrl)
+        {
+
+            var client = new RestClient()
+            {
+                BaseUrl = new Uri(strUrl)
+            };
+            var request = new RestRequest()
+            {
+                Method = Method.GET
+            };
+            return client.Execute(request);
+        }
+
+	int counter = 0;
+            string line;
+            int id = 1;
+
+            System.IO.StreamReader file =
+                new System.IO.StreamReader(@"words_alpha.txt");
+            string str1SQL = "INSERT INTO Names123(ID,Field1,Field2) VALUES('";
+            string strSmall = "')";
+            string strSmall2 = "','";
+            string strSQL = "INSERT INTO Names123(ID,Field1,Field2) VALUES('10','KWSTAS','πεντε')";
+            OleDbConnection conn = new OleDbConnection();
+            conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Monster\Documents\Visual Studio 2017\MyProjs\elearning\eLearning\wordDB2.accdb";
+            
+            
+            while ((line = file.ReadLine()) != null)
+            {
+
+                string yo =line;
+                string lo = "en-el";
+                StringBuilder sb = new StringBuilder();
+                var response = RequestService(string.Format(AppCache.UrlTranslateLanguage, AppCache.API, yo, lo));
+                var dict = JsonConvert.DeserializeObject<IDictionary>(response.Content);
+                var statusCode = dict["code"].ToString();
+
+                conn.Open();
+
+                if (statusCode.Equals("200"))
+                {
+                    
+                    string str = string.Join("[", dict["text"]);
+                    foreach (char c in str)
+                    {
+                        if ((c >= '0' && c <= '9') || (c >= 'Ά' && c <= 'Ύ') || (c >= 'ά' && c <= 'ώ') || c == '.' || c == ' ')
+                        {
+                            sb.Append(c);
+                            
+                        }
+                    }
+                   
+                    Console.WriteLine("end");
+                    Console.WriteLine(dict["text"].GetType());
+                   
+                }
+                string fullSQL = str1SQL + id + strSmall2 + line + strSmall2 + sb.ToString() + strSmall;
+                if (sb.ToString().Equals(" ")|| sb.ToString().Equals("")|| sb.ToString().Equals("  ")|| sb.ToString().Equals("   ")|| sb.ToString().Equals("    "))
+                {
+                    Console.WriteLine("~O~O~O~O~O~O~O~O~O~O~O~O~O~O~O~O~O~O~O~O~O~O~O~O~O~");
+                }
+                else
+                {
+                    Console.WriteLine("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+                    OleDbCommand command = new OleDbCommand(fullSQL, conn);
+                    OleDbDataReader reader = command.ExecuteReader();
+                    reader.Close();
+                    id++;
+                }
+
+
+
+
+                
+                conn.Close();
+
+                
+
+                
+                System.Console.WriteLine(fullSQL);
+                counter++;
