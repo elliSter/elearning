@@ -7,35 +7,49 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace eLearning
 {
     public partial class startForm : Form
     {
+        Thread thread;
         WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
 
         public startForm()
         {
             InitializeComponent();
-            player.URL = @"C:\Users\Elli\source\repos\WindowsFormsApp1\onceagain.mp3";
+            player.URL = @"onceagain.mp3"; 
             player.controls.play();
             
         }
 
         private void forgottenPassword_Click(object sender, EventArgs e)
         {
-            Renew_Password renew_Password = new Renew_Password();
-            renew_Password.Show();
-            
-            
+            player.controls.stop();
+            this.Close();
+            thread = new Thread(openForgottenPasswordForm);
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+        }
+
+        private void openForgottenPasswordForm(object obj)
+        {
+            Application.Run(new Renew_Password());
         }
 
         private void logIn_Click(object sender, EventArgs e)
         {
-            MainMenu mainMenu = new MainMenu();
-            mainMenu.Show();
-            
+            player.controls.stop();
+            this.Close();
+            thread = new Thread(openMainMenuForm);
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+        }
 
+        private void openMainMenuForm(object obj)
+        {
+            Application.Run(new MainMenu());
         }
 
 
@@ -46,9 +60,16 @@ namespace eLearning
 
         private void signUp_Click(object sender, EventArgs e)
         {
-            SignUp signUpForm = new SignUp();
-            signUpForm.Show();
-            
+            player.controls.stop();
+            this.Close();
+            thread = new Thread(openSignUpForm);
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+        }
+
+        private void openSignUpForm(object obj)
+        {
+            Application.Run(new SignUp());
         }
 
         private void soundOff_Click(object sender, EventArgs e)
@@ -80,6 +101,9 @@ namespace eLearning
             signUp.BackColor = Color.DarkSlateGray;
         }
 
-        
+        private void startForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

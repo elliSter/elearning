@@ -9,24 +9,35 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using WMPLib;
+using System.Threading;
 
 
 namespace eLearning
 {
     public partial class MainMenu : Form
     {
+        Thread thread;
         WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
 
         public MainMenu()
         {
             InitializeComponent();
-            //player.URL = @"C:\Users\Elli\source\repos\WindowsFormsApp1\onceagain.mp3";
-            //player.controls.play();
+            player.URL = @"onceagain.mp3";
+            player.controls.play();
         }
 
         private void logOut_Click(object sender, EventArgs e)
         {
-            Close();
+            player.controls.stop();
+            this.Close();
+            thread = new Thread(openStartForm);
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+        }
+
+        private void openStartForm(object obj)
+        {
+            Application.Run(new startForm());
         }
 
         private void soundOff_Click(object sender, EventArgs e)

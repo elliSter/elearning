@@ -21,5 +21,10 @@ namespace eLearning
         {
             Close();
         }
+
+        private void Test_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

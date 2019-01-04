@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Threading;
 
 namespace eLearning
 {
     public partial class SignUp : Form
     {
+        Thread thread;
         WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
 
         public SignUp()
@@ -29,14 +30,30 @@ namespace eLearning
 
         private void cancel_Click(object sender, EventArgs e)
         {
-            Close();
+            player.controls.stop();
+            this.Close();
+            thread = new Thread(openStartForm);
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+        }
+
+        private void openStartForm(object obj)
+        {
+            Application.Run(new startForm());
         }
 
         private void signUpButton_Click(object sender, EventArgs e)
-        {
-            MainMenu mainMenu = new MainMenu();
-            mainMenu.Show();
+        { 
+            player.controls.stop();
+            this.Close();
+            thread = new Thread(openMainMenu);
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+        }
 
+        private void openMainMenu(object obj)
+        {
+            Application.Run(new MainMenu());
         }
     }
 }
