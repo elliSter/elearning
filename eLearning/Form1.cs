@@ -13,6 +13,7 @@ namespace eLearning
 { //testingcomm
     public partial class startForm : Form
     {
+        public static int temp_id=1;
         Thread thread;
         WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
 
