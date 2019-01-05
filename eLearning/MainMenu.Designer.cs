@@ -49,7 +49,7 @@
             this.logOut.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.logOut.Cursor = System.Windows.Forms.Cursors.No;
             this.logOut.Image = ((System.Drawing.Image)(resources.GetObject("logOut.Image")));
-            this.logOut.Location = new System.Drawing.Point(274, 12);
+            this.logOut.Location = new System.Drawing.Point(290, 12);
             this.logOut.Name = "logOut";
             this.logOut.Size = new System.Drawing.Size(26, 25);
             this.logOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -63,7 +63,7 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(107, 83);
+            this.button1.Location = new System.Drawing.Point(123, 104);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(101, 51);
             this.button1.TabIndex = 1;
@@ -79,7 +79,7 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(107, 140);
+            this.button2.Location = new System.Drawing.Point(123, 161);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(101, 51);
             this.button2.TabIndex = 2;
@@ -94,7 +94,7 @@
             this.soundOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("soundOff.BackgroundImage")));
             this.soundOff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.soundOff.Image = ((System.Drawing.Image)(resources.GetObject("soundOff.Image")));
-            this.soundOff.Location = new System.Drawing.Point(252, 230);
+            this.soundOff.Location = new System.Drawing.Point(280, 278);
             this.soundOff.Name = "soundOff";
             this.soundOff.Size = new System.Drawing.Size(36, 36);
             this.soundOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -105,7 +105,7 @@
             // axWindowsMediaPlayer1
             // 
             this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(252, 230);
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(280, 278);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(36, 36);
@@ -117,7 +117,7 @@
             this.soundOn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("soundOn.BackgroundImage")));
             this.soundOn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.soundOn.Image = ((System.Drawing.Image)(resources.GetObject("soundOn.Image")));
-            this.soundOn.Location = new System.Drawing.Point(252, 230);
+            this.soundOn.Location = new System.Drawing.Point(280, 278);
             this.soundOn.Name = "soundOn";
             this.soundOn.Size = new System.Drawing.Size(36, 36);
             this.soundOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -131,7 +131,7 @@
             this.credits.Cursor = System.Windows.Forms.Cursors.Hand;
             this.credits.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.credits.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.credits.Location = new System.Drawing.Point(22, 230);
+            this.credits.Location = new System.Drawing.Point(12, 278);
             this.credits.Name = "credits";
             this.credits.Size = new System.Drawing.Size(75, 36);
             this.credits.TabIndex = 6;
@@ -142,7 +142,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.pictureBox1.Image = global::eLearning.Properties.Resources.VisualEditor___Icon___Help_svg;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(35, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -156,7 +156,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(312, 295);
+            this.ClientSize = new System.Drawing.Size(345, 339);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.credits);
             this.Controls.Add(this.soundOff);

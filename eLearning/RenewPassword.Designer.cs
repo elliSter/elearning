@@ -44,7 +44,7 @@
             this.cancel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.cancel.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.cancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cancel.Location = new System.Drawing.Point(117, 200);
+            this.cancel.Location = new System.Drawing.Point(102, 208);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(81, 36);
             this.cancel.TabIndex = 0;
@@ -57,7 +57,7 @@
             this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(205, 200);
+            this.button2.Location = new System.Drawing.Point(190, 208);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(81, 36);
             this.button2.TabIndex = 1;
@@ -71,7 +71,7 @@
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(86, 79);
+            this.label1.Location = new System.Drawing.Point(71, 87);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 19);
             this.label1.TabIndex = 2;
@@ -84,7 +84,7 @@
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(112, 115);
+            this.label2.Location = new System.Drawing.Point(97, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 19);
             this.label2.TabIndex = 3;
@@ -97,7 +97,7 @@
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
-            this.label3.Location = new System.Drawing.Point(57, 147);
+            this.label3.Location = new System.Drawing.Point(42, 155);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 19);
             this.label3.TabIndex = 4;
@@ -106,7 +106,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox1.Location = new System.Drawing.Point(172, 77);
+            this.textBox1.Location = new System.Drawing.Point(157, 85);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(125, 23);
             this.textBox1.TabIndex = 5;
@@ -114,7 +114,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox2.Location = new System.Drawing.Point(172, 110);
+            this.textBox2.Location = new System.Drawing.Point(157, 118);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(125, 23);
             this.textBox2.TabIndex = 6;
@@ -122,7 +122,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox3.Location = new System.Drawing.Point(172, 145);
+            this.textBox3.Location = new System.Drawing.Point(157, 153);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(125, 23);
             this.textBox3.TabIndex = 7;
@@ -132,7 +132,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::eLearning.Properties.Resources.back;
-            this.ClientSize = new System.Drawing.Size(384, 316);
+            this.ClientSize = new System.Drawing.Size(345, 339);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
