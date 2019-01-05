@@ -40,7 +40,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.soundOff = new System.Windows.Forms.PictureBox();
+            this.soundOn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soundOff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soundOn)).BeginInit();
             this.SuspendLayout();
             // 
             // signUpButton
@@ -165,12 +169,41 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Τί ζώο είναι?";
             // 
+            // soundOff
+            // 
+            this.soundOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("soundOff.BackgroundImage")));
+            this.soundOff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.soundOff.Image = ((System.Drawing.Image)(resources.GetObject("soundOff.Image")));
+            this.soundOff.Location = new System.Drawing.Point(297, 291);
+            this.soundOff.Name = "soundOff";
+            this.soundOff.Size = new System.Drawing.Size(36, 36);
+            this.soundOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.soundOff.TabIndex = 17;
+            this.soundOff.TabStop = false;
+            this.soundOff.Click += new System.EventHandler(this.soundOff_Click);
+            // 
+            // soundOn
+            // 
+            this.soundOn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("soundOn.BackgroundImage")));
+            this.soundOn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.soundOn.Image = ((System.Drawing.Image)(resources.GetObject("soundOn.Image")));
+            this.soundOn.Location = new System.Drawing.Point(297, 291);
+            this.soundOn.Name = "soundOn";
+            this.soundOn.Size = new System.Drawing.Size(36, 36);
+            this.soundOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.soundOn.TabIndex = 18;
+            this.soundOn.TabStop = false;
+            this.soundOn.Visible = false;
+            this.soundOn.Click += new System.EventHandler(this.soundOn_Click_1);
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.ClientSize = new System.Drawing.Size(345, 339);
+            this.Controls.Add(this.soundOff);
+            this.Controls.Add(this.soundOn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.pictureBox1);
@@ -187,6 +220,8 @@
             this.Text = "Sign Up";
             this.Load += new System.EventHandler(this.SignUp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soundOff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soundOn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,5 +240,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox soundOff;
+        private System.Windows.Forms.PictureBox soundOn;
     }
 }

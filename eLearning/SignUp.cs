@@ -19,8 +19,8 @@ namespace eLearning
         public SignUp()
         {
             InitializeComponent();
-            //player.URL = @"C:\Users\Elli\source\repos\WindowsFormsApp1\onceagain.mp3";
-            //player.controls.play();
+            player.URL = @"onceagain.mp3";
+            player.controls.play();
         }
 
         private void SignUp_Load(object sender, EventArgs e)
@@ -61,6 +61,25 @@ namespace eLearning
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void soundOff_Click(object sender, EventArgs e)
+        {
+            soundOff.Visible = false;
+            player.controls.stop();
+            soundOn.Visible = true;
+        }
+
+        private void soundOn_Click_1(object sender, EventArgs e)
+        {
+            soundOn.Visible = false;
+            player.controls.play();
+            soundOff.Visible = true;
+        }
+
+        private void soundOff_Click_1(object sender, EventArgs e)
         {
 
         }
