@@ -43,17 +43,26 @@ namespace eLearning
         }
 
         private void signUpButton_Click(object sender, EventArgs e)
-        { 
-            player.controls.stop();
-            this.Close();
-            thread = new Thread(openMainMenu);
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
+        {
+            if (textBox4.Text == "cat")
+            {
+                player.controls.stop();
+                this.Close();
+                thread = new Thread(openMainMenu);
+                thread.SetApartmentState(ApartmentState.STA);
+                thread.Start();
+            }
+            else MessageBox.Show("Wrong animal, try again");
         }
 
         private void openMainMenu(object obj)
         {
             Application.Run(new MainMenu());
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
