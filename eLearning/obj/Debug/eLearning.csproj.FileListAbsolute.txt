@@ -17,4 +17,5 @@ C:\Users\Elli\source\repos\eLearning\eLearning\obj\Debug\eLearning.csproj.Resolv
 C:\Users\Elli\source\repos\eLearning\eLearning\obj\Debug\eLearning.MainMenu.resources
 C:\Users\Elli\source\repos\eLearning\eLearning\obj\Debug\eLearning.SignUp.resources
 C:\Users\Elli\source\repos\eLearning\eLearning\obj\Debug\eLearning.Help.resources
-C:\Users\Elli\Source\Repos\elearning\eLearning\obj\Debug\eLearning.Reading.resources
+C:\Users\Elli\source\repos\elearning\eLearning\obj\Debug\eLearning.Practise.resources
+C:\Users\Elli\source\repos\elearning\eLearning\obj\Debug\eLearning.Test.resources
