@@ -53,5 +53,13 @@ namespace eLearning
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textBox3.Text != textBox4.Text)
+            {
+                MessageBox.Show("Password and Confirm Password dont match");
+            }
+        }
     }
 }
