@@ -2,7 +2,6 @@ C:\Users\Elli\source\repos\eLearning\eLearning\bin\Debug\eLearning.exe.config
 C:\Users\Elli\source\repos\eLearning\eLearning\bin\Debug\eLearning.exe
 C:\Users\Elli\source\repos\eLearning\eLearning\bin\Debug\eLearning.pdb
 C:\Users\Elli\source\repos\eLearning\eLearning\obj\Debug\eLearning.csprojAssemblyReference.cache
-C:\Users\Elli\source\repos\eLearning\eLearning\obj\Debug\eLearning.startForm.resources
 C:\Users\Elli\source\repos\eLearning\eLearning\obj\Debug\eLearning.Properties.Resources.resources
 C:\Users\Elli\source\repos\eLearning\eLearning\obj\Debug\eLearning.Renew_Password.resources
 C:\Users\Elli\source\repos\eLearning\eLearning\obj\Debug\eLearning.csproj.GenerateResource.cache
@@ -19,3 +18,4 @@ C:\Users\Elli\source\repos\eLearning\eLearning\obj\Debug\eLearning.SignUp.resour
 C:\Users\Elli\source\repos\eLearning\eLearning\obj\Debug\eLearning.Help.resources
 C:\Users\Elli\source\repos\elearning\eLearning\obj\Debug\eLearning.Practise.resources
 C:\Users\Elli\source\repos\elearning\eLearning\obj\Debug\eLearning.Test.resources
+C:\Users\Elli\source\repos\elearning\eLearning\obj\Debug\eLearning.startForm.resources
