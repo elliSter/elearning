@@ -167,6 +167,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "startForm";
             this.Text = "Welcome";
+            this.Load += new System.EventHandler(this.startForm_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.soundOff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.soundOn)).EndInit();
             this.ResumeLayout(false);
