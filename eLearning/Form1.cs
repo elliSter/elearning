@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Data.OleDb;
 
 namespace eLearning
 { //testingcomm
@@ -41,11 +42,54 @@ namespace eLearning
 
         private void logIn_Click(object sender, EventArgs e)
         {
-            player.controls.stop();
-            this.Close();
-            thread = new Thread(openMainMenuForm);
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
+
+            OleDbConnection conn = new OleDbConnection();
+            string appPath = Application.StartupPath;
+            conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/eLearning_acc.accdb";
+            conn.Open();
+            string strSQL = "SELECT * FROM Accounts123";
+            OleDbCommand command = new OleDbCommand(strSQL, conn);
+            OleDbDataReader reader = command.ExecuteReader();
+            bool no_info = false;
+            bool wrong_info = false;
+            bool nerrorb = false;
+            temp_id = 0;
+            while (reader.Read())
+            {
+                if (textBox1.Text.Equals(reader["Username1"]))
+                {
+                    if (textBox2.Text.Equals(reader["Password2"]))
+                    {
+                        temp_id = Convert.ToInt32(reader["ID"]);
+                        nerrorb = true;
+                        player.controls.stop();
+                        this.Close();
+                        thread = new Thread(openMainMenuForm);
+                        thread.SetApartmentState(ApartmentState.STA);
+                        thread.Start();
+                    }
+                }
+
+            }
+            MessageBoxButtons buttons = MessageBoxButtons.OK;
+            string message = "You did not enter valid Information.";
+            string caption = "Error Detected in Input";
+            DialogResult result;
+            if (!nerrorb)
+            {
+                result = MessageBox.Show(message, caption, buttons);
+                if (result == System.Windows.Forms.DialogResult.OK)
+                {
+
+                    // Closes the parent form.
+
+                    //this.Close();
+
+                }
+            }
+            conn.Close();
+
+            
         }
 
         private void openMainMenuForm(object obj)

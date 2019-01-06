@@ -171,7 +171,7 @@
             this.Controls.Add(this.cancel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Renew_Password";
-            this.Text = "Renew Password";
+            this.Text = "Renew Password ";
             this.Load += new System.EventHandler(this.Renew_Password_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
