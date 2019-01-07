@@ -20,7 +20,7 @@ namespace eLearning
         public static int answ1_id;
         public static int answ2_id;
         public static int answ3_id;
-        public static int en_gr = 1;
+        public static int en_gr = 0;
         public static string cor_answ;
         public static int temp_cor;
 
@@ -78,6 +78,7 @@ namespace eLearning
             string fa1 = "2";
             string fa2 = "3";
 
+            //jh
             if (EnglishToGreek.en_gr == 0)
             {
 
@@ -133,7 +134,8 @@ namespace eLearning
 
             }
             //=======================================================================================================================================================================================
-            else if (EnglishToGreek.en_gr == 1)
+            //uh
+            if (EnglishToGreek.en_gr == 1)
             {
                 OleDbConnection conn2 = new OleDbConnection();
                 conn2.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/wordDB2.accdb";
@@ -191,7 +193,7 @@ namespace eLearning
                 conn2.Close();
 
             }
-
+            
 
 
 
@@ -270,7 +272,7 @@ namespace eLearning
             Random random = new Random();
             return random.Next(min, max);
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             if (EnglishToGreek.en_gr == 0)
@@ -284,7 +286,7 @@ namespace eLearning
                 button2.Text = "EN-GR";
             }
             Practise_Load(this, e);
-        }
+        } 
 
         private void label4_Click(object sender, EventArgs e)
         {

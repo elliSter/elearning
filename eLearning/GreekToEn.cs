@@ -20,7 +20,7 @@ namespace eLearning
         public static int answ1_id;
         public static int answ2_id;
         public static int answ3_id;
-        public static int en_gr = 1;
+        public static int en_gr = 0;
         public static string cor_answ;
         public static int temp_cor;
 
@@ -64,10 +64,10 @@ namespace eLearning
             }
 
 
-            EnglishToGreek.quest_id = RandomNumber(4, 60000);
-            EnglishToGreek.answ1_id = EnglishToGreek.quest_id;
-            EnglishToGreek.answ2_id = RandomNumber(3, 67000);
-            EnglishToGreek.answ3_id = RandomNumber(3, 65000);
+            GreekToEn.quest_id = RandomNumber(4, 60000);
+            GreekToEn.answ1_id = GreekToEn.quest_id;
+            GreekToEn.answ2_id = RandomNumber(3, 67000);
+            GreekToEn.answ3_id = RandomNumber(3, 65000);
             Console.WriteLine("answ1_id = " + answ1_id + " || answ1_id = " + answ2_id + " || answ1_id = " + answ3_id + " ||====()()====|| Corrects : " + temp_cor);
 
             int correct = RandomNumber(0, 65000);
@@ -78,7 +78,7 @@ namespace eLearning
             string fa1 = "2";
             string fa2 = "3";
 
-            if (EnglishToGreek.en_gr == 0)
+            //if (GreekToEn.en_gr == 0)
             {
 
                 OleDbConnection conn2 = new OleDbConnection();
@@ -89,22 +89,22 @@ namespace eLearning
                 OleDbDataReader reader2 = command2.ExecuteReader();
                 while (reader2.Read())
                 {
-                    if (EnglishToGreek.answ1_id == Convert.ToInt32(reader2["ID"]))
+                    if (GreekToEn.answ1_id == Convert.ToInt32(reader2["ID"]))
                     {
                         cor = reader2["Field2"].ToString();
                         label1.Text = reader2["Field1"].ToString();
                         Console.WriteLine("Correct Word:" + cor + "-----------");
                     }
-                    if (EnglishToGreek.answ2_id == Convert.ToInt32(reader2["ID"]))
+                    if (GreekToEn.answ2_id == Convert.ToInt32(reader2["ID"]))
                     {
                         fa1 = reader2["Field2"].ToString();
                     }
-                    if (EnglishToGreek.answ3_id == Convert.ToInt32(reader2["ID"]))
+                    if (GreekToEn.answ3_id == Convert.ToInt32(reader2["ID"]))
                     {
                         fa2 = reader2["Field2"].ToString();
                     }
                     //===================================
-                    EnglishToGreek.cor_answ = cor;
+                    GreekToEn.cor_answ = cor;
                     if (fail1 == 0)
                     {
                         radioButton1.Text = cor;
@@ -133,7 +133,7 @@ namespace eLearning
 
             }
             //=======================================================================================================================================================================================
-            else if (EnglishToGreek.en_gr == 1)
+            /*else if (GreekToEn.en_gr == 1)
             {
                 OleDbConnection conn2 = new OleDbConnection();
                 conn2.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/wordDB2.accdb";
@@ -143,21 +143,21 @@ namespace eLearning
                 OleDbDataReader reader2 = command2.ExecuteReader();
                 while (reader2.Read())
                 {
-                    if (EnglishToGreek.answ1_id == Convert.ToInt32(reader2["ID"]))
+                    if (GreekToEn.answ1_id == Convert.ToInt32(reader2["ID"]))
                     {
                         cor = reader2["Field1"].ToString();
                         label1.Text = reader2["Field2"].ToString();
                     }
-                    if (EnglishToGreek.answ2_id == Convert.ToInt32(reader2["ID"]))
+                    if (GreekToEn.answ2_id == Convert.ToInt32(reader2["ID"]))
                     {
                         fa1 = reader2["Field1"].ToString();
                     }
-                    if (EnglishToGreek.answ3_id == Convert.ToInt32(reader2["ID"]))
+                    if (GreekToEn.answ3_id == Convert.ToInt32(reader2["ID"]))
                     {
                         fa2 = reader2["Field1"].ToString();
                     }
                     //====================
-                    EnglishToGreek.cor_answ = cor;
+                    GreekToEn.cor_answ = cor;
                     if (fail1 == 0)
                     {
                         radioButton1.Text = cor;
@@ -190,7 +190,7 @@ namespace eLearning
                 reader2.Close();
                 conn2.Close();
 
-            }
+            } */
 
 
 
@@ -220,21 +220,21 @@ namespace eLearning
             string strSQL;
 
 
-            if ((groupBox1.Controls[0].Text.Equals(EnglishToGreek.cor_answ) || groupBox1.Controls[0].Text.Equals(" " + EnglishToGreek.cor_answ)) && radioButton3.Checked)
+            if ((groupBox1.Controls[0].Text.Equals(GreekToEn.cor_answ) || groupBox1.Controls[0].Text.Equals(" " + GreekToEn.cor_answ)) && radioButton3.Checked)
             {
 
-                new_cor = EnglishToGreek.temp_cor + 1;
-                EnglishToGreek.temp_cor = new_cor;
+                new_cor = GreekToEn.temp_cor + 1;
+                GreekToEn.temp_cor = new_cor;
                 strSQL = "UPDATE Accounts123 SET Correct4=" + new_cor + " WHERE ID=" + startForm.temp_id;
                 OleDbCommand command = new OleDbCommand(strSQL, conn);
                 OleDbDataReader reader = command.ExecuteReader();
-                //groupBox1.Controls[0].Text += "_hi";
+               
                 Console.WriteLine(groupBox1.Controls[0].Text + "---------------------===========================CORRECT!!!===========================---------------------");
             }
-            else if ((groupBox1.Controls[1].Text.Equals(EnglishToGreek.cor_answ) || groupBox1.Controls[1].Text.Equals(" " + EnglishToGreek.cor_answ)) && radioButton2.Checked)
+            else if ((groupBox1.Controls[1].Text.Equals(GreekToEn.cor_answ) || groupBox1.Controls[1].Text.Equals(" " + GreekToEn.cor_answ)) && radioButton2.Checked)
             {
-                new_cor = EnglishToGreek.temp_cor + 1;
-                EnglishToGreek.temp_cor = new_cor;
+                new_cor = GreekToEn.temp_cor + 1;
+                GreekToEn.temp_cor = new_cor;
                 strSQL = "UPDATE Accounts123 SET Correct4=" + new_cor + " WHERE ID=" + startForm.temp_id;
                 OleDbCommand command = new OleDbCommand(strSQL, conn);
                 OleDbDataReader reader = command.ExecuteReader();
@@ -242,10 +242,10 @@ namespace eLearning
                 Console.WriteLine(groupBox1.Controls[1].Text + "---------------------===========================CORRECT!!!===========================---------------------");
 
             }
-            else if ((groupBox1.Controls[2].Text.Equals(EnglishToGreek.cor_answ) || groupBox1.Controls[2].Text.Equals(" " + EnglishToGreek.cor_answ)) && radioButton1.Checked)
+            else if ((groupBox1.Controls[2].Text.Equals(GreekToEn.cor_answ) || groupBox1.Controls[2].Text.Equals(" " + GreekToEn.cor_answ)) && radioButton1.Checked)
             {
-                new_cor = EnglishToGreek.temp_cor + 1;
-                EnglishToGreek.temp_cor = new_cor;
+                new_cor = GreekToEn.temp_cor + 1;
+                GreekToEn.temp_cor = new_cor;
                 strSQL = "UPDATE Accounts123 SET Correct4=" + new_cor + " WHERE ID=" + startForm.temp_id;
                 OleDbCommand command = new OleDbCommand(strSQL, conn);
                 OleDbDataReader reader = command.ExecuteReader();
@@ -257,7 +257,7 @@ namespace eLearning
                 Console.WriteLine("--------------------------------WRONG ANSWER--------------------------------");
             }
             Console.WriteLine("groupBox1.Controls[0].Text = _" + groupBox1.Controls[0].Text + "_ || groupBox1.Controls[1].Text = _" + groupBox1.Controls[1].Text + "_ || groupBox1.Controls[2].Text = _" + groupBox1.Controls[2].Text + "_");
-            Console.WriteLine("Practise.cor_answ = _" + EnglishToGreek.cor_answ + "_");
+            Console.WriteLine("Practise.cor_answ = _" + GreekToEn.cor_answ + "_");
             Console.WriteLine("Radio 1 = " + radioButton1.Checked);
             Console.WriteLine("Radio 2 = " + radioButton2.Checked);
             Console.WriteLine("Radio 3 = " + radioButton3.Checked);
@@ -270,21 +270,21 @@ namespace eLearning
             Random random = new Random();
             return random.Next(min, max);
         }
-
+        /*
         private void button2_Click(object sender, EventArgs e)
         {
-            if (EnglishToGreek.en_gr == 0)
+            if (GreekToEn.en_gr == 0)
             {
-                EnglishToGreek.en_gr = 1;
+                GreekToEn.en_gr = 1;
                 button2.Text = "GR-EN";
             }
-            else if (EnglishToGreek.en_gr == 1)
+            else if (GreekToEn.en_gr == 1)
             {
-                EnglishToGreek.en_gr = 0;
+                GreekToEn.en_gr = 0;
                 button2.Text = "EN-GR";
             }
             GreekToEn_Load(this, e);
-        }
+        } */
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -334,6 +334,11 @@ namespace eLearning
         private void openMainMenu(object obj)
         {
             Application.Run(new MainMenu());
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
