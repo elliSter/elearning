@@ -212,6 +212,7 @@ namespace eLearning
         private void button1_Click(object sender, EventArgs e)
         {
             label4.Hide();
+            pictureBox1.Hide();
             OleDbConnection conn = new OleDbConnection();
             string appPath = Application.StartupPath;
             conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/eLearning_acc.accdb";

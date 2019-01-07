@@ -41,8 +41,10 @@
             this.logOut = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.menuButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logOut)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -72,7 +74,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label2.Location = new System.Drawing.Point(10, 114);
+            this.label2.Location = new System.Drawing.Point(34, 114);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 31);
             this.label2.TabIndex = 2;
@@ -151,6 +153,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "EN-GR";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // logOut
@@ -170,7 +173,8 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label4.Location = new System.Drawing.Point(65, 145);
+            this.label4.Image = global::eLearning.Properties.Resources.back;
+            this.label4.Location = new System.Drawing.Point(65, 49);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(391, 42);
             this.label4.TabIndex = 7;
@@ -193,12 +197,25 @@
             this.menuButton.MouseEnter += new System.EventHandler(this.menuButton_MouseEnter);
             this.menuButton.MouseLeave += new System.EventHandler(this.menuButton_MouseLeave);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::eLearning.Properties.Resources.back;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureBox1.Image = global::eLearning.Properties.Resources.Play;
+            this.pictureBox1.Location = new System.Drawing.Point(40, 89);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(419, 295);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
             // EnglishToGreek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.ClientSize = new System.Drawing.Size(499, 461);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.logOut);
@@ -215,6 +232,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logOut)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,5 +252,6 @@
         private System.Windows.Forms.PictureBox logOut;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button menuButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

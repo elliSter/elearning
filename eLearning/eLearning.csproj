@@ -192,5 +192,8 @@
   <ItemGroup>
     <None Include="Resources\αρχείο λήψης.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
