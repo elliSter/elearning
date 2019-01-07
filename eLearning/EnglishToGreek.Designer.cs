@@ -189,6 +189,7 @@
             this.menuButton.TabIndex = 8;
             this.menuButton.Text = "Back to Menu";
             this.menuButton.UseVisualStyleBackColor = false;
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             this.menuButton.MouseEnter += new System.EventHandler(this.menuButton_MouseEnter);
             this.menuButton.MouseLeave += new System.EventHandler(this.menuButton_MouseLeave);
             // 

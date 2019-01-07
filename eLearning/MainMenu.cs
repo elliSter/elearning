@@ -80,8 +80,16 @@ namespace eLearning
 
         private void button2_Click(object sender, EventArgs e)
         {
-            GreekToEnglish test = new GreekToEnglish();
-            test.Show();
+            player.controls.stop();
+            this.Close();
+            thread = new Thread(openGrToEn);
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+        }
+
+        private void openGrToEn(object obj)
+        {
+            Application.Run(new EnglishToGreek());
         }
 
         private void button2_MouseEnter(object sender, EventArgs e)

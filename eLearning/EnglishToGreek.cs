@@ -321,5 +321,19 @@ namespace eLearning
         {
             menuButton.BackColor = Color.DarkSlateGray;
         }
+
+        private void menuButton_Click(object sender, EventArgs e)
+        {
+            player.controls.stop();
+            this.Close();
+            thread = new Thread(openMainMenu);
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+        }
+
+        private void openMainMenu(object obj)
+        {
+            Application.Run(new MainMenu());
+        }
     }
 }
