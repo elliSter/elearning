@@ -89,7 +89,7 @@ namespace eLearning
 
         private void openGrToEn(object obj)
         {
-            Application.Run(new EnglishToGreek());
+            Application.Run(new GreekToEn());
         }
 
         private void button2_MouseEnter(object sender, EventArgs e)

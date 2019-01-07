@@ -134,7 +134,7 @@ namespace eLearning
 
             }
             //=======================================================================================================================================================================================
-            //uh
+            /*uh
             if (EnglishToGreek.en_gr == 1)
             {
                 OleDbConnection conn2 = new OleDbConnection();
@@ -194,7 +194,7 @@ namespace eLearning
 
             }
             
-
+            */
 
 
             //===============================================================
@@ -274,6 +274,7 @@ namespace eLearning
             return random.Next(min, max);
         }
         
+        /*
         private void button2_Click(object sender, EventArgs e)
         {
             if (EnglishToGreek.en_gr == 0)
@@ -287,7 +288,7 @@ namespace eLearning
                 button2.Text = "EN-GR";
             }
             Practise_Load(this, e);
-        } 
+        } */
 
         private void label4_Click(object sender, EventArgs e)
         {
