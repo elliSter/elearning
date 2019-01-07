@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GreekToEnglish - Copy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GreekToEnglish - Copy.Designer.cs">
+      <DependentUpon>GreekToEnglish - Copy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <Compile Include="SignUp.designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GreekToEnglish - Copy.resx">
+      <DependentUpon>GreekToEnglish - Copy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

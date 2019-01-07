@@ -48,7 +48,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button1.Location = new System.Drawing.Point(340, 395);
+            this.button1.Location = new System.Drawing.Point(371, 395);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 46);
             this.button1.TabIndex = 0;
@@ -158,9 +158,9 @@
             this.logOut.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.logOut.Cursor = System.Windows.Forms.Cursors.No;
             this.logOut.Image = ((System.Drawing.Image)(resources.GetObject("logOut.Image")));
-            this.logOut.Location = new System.Drawing.Point(430, 21);
+            this.logOut.Location = new System.Drawing.Point(461, 21);
             this.logOut.Name = "logOut";
-            this.logOut.Size = new System.Drawing.Size(26, 25);
+            this.logOut.Size = new System.Drawing.Size(26, 23);
             this.logOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logOut.TabIndex = 6;
             this.logOut.TabStop = false;
