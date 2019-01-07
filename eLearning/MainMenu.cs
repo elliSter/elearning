@@ -61,8 +61,16 @@ namespace eLearning
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Practise practise = new Practise();
-            practise.Show();
+            player.controls.stop();
+            this.Close();
+            thread = new Thread(openEnToGr);
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+        }
+
+        private void openEnToGr(object obj)
+        {
+            Application.Run(new EnglishToGreek());
         }
 
         private void button1_MouseEnter(object sender, EventArgs e)
@@ -72,7 +80,7 @@ namespace eLearning
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Test test = new Test();
+            GreekToEnglish test = new GreekToEnglish();
             test.Show();
         }
 

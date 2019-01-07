@@ -66,11 +66,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Practise.cs">
+    <Compile Include="EnglishToGreek.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Practise.Designer.cs">
-      <DependentUpon>Practise.cs</DependentUpon>
+    <Compile Include="EnglishToGreek.Designer.cs">
+      <DependentUpon>EnglishToGreek.cs</DependentUpon>
     </Compile>
     <Compile Include="RenewPassword.cs">
       <SubType>Form</SubType>
@@ -83,12 +83,6 @@
     </Compile>
     <Compile Include="SignUp.designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Test.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Test.Designer.cs">
-      <DependentUpon>Test.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -109,17 +103,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Practise.resx">
-      <DependentUpon>Practise.cs</DependentUpon>
+    <EmbeddedResource Include="EnglishToGreek.resx">
+      <DependentUpon>EnglishToGreek.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RenewPassword.resx">
       <DependentUpon>RenewPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Test.resx">
-      <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
