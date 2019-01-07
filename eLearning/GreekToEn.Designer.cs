@@ -172,11 +172,11 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button1.Location = new System.Drawing.Point(353, 401);
+            this.button1.Location = new System.Drawing.Point(350, 396);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 46);
+            this.button1.Size = new System.Drawing.Size(119, 51);
             this.button1.TabIndex = 9;
-            this.button1.Text = "Submit";
+            this.button1.Text = "START";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -197,11 +197,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label4.Image = global::eLearning.Properties.Resources.back;
-            this.label4.Location = new System.Drawing.Point(58, 63);
+            this.label4.Location = new System.Drawing.Point(141, 50);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(391, 42);
+            this.label4.Size = new System.Drawing.Size(212, 42);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Press Submit To Start!";
+            this.label4.Text = "Press Start!";
             // 
             // GreekToEn
             // 

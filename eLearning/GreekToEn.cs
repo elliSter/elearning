@@ -214,6 +214,9 @@ namespace eLearning
         {
             label4.Hide();
             pictureBox1.Hide();
+            button1.Text = " Submit ";
+            button1.BackColor = Color.DarkSlateGray;
+            button1.ForeColor = Color.White;
             OleDbConnection conn = new OleDbConnection();
             string appPath = Application.StartupPath;
             conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/eLearning_acc.accdb";
