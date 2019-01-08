@@ -24,6 +24,22 @@ namespace eLearning
             InitializeComponent();
             player.URL = @"betterdays.mp3";
             player.controls.play();
+            
+            string appPath = Application.StartupPath;
+            OleDbConnection conn = new OleDbConnection();
+            conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/eLearning_acc.accdb";
+            conn.Open();
+            string strSQL = "SELECT * FROM Accounts123";
+            OleDbCommand command = new OleDbCommand(strSQL, conn);
+            OleDbDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                if (startForm.temp_id == Convert.ToInt32(reader["ID"]))
+                {
+                    EnglishToGreek.lvl = Convert.ToInt32(reader["Level5"]);
+                }
+            }
+            label4.Text = "Level: " + EnglishToGreek.lvl;
         }
 
         private void logOut_Click(object sender, EventArgs e)
