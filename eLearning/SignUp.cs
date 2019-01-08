@@ -66,13 +66,13 @@ namespace eLearning
             }            
             reader2.Close();
             int id = Convert.ToInt32(id2) + 1;
-            string str1SQL = "INSERT INTO Accounts123 (ID,Username1,Password2,Fullname3,Correct4) VALUES('";
+            string str1SQL = "INSERT INTO Accounts123 (ID,Username1,Password2,Fullname3,Correct4,Level5,Rating6) VALUES('";
             string strSmall = "')";
             string strSmall2 = "','";
             if (textBox4.Text.Equals("cat") || textBox4.Text.Equals("γάτα") || textBox4.Text.Equals("γατα") || textBox4.Text.Equals("gata"))
             {
                 
-                string fullSQL = str1SQL + id + strSmall2 + textBox1.Text + strSmall2 + textBox3.Text + strSmall2 + textBox2.Text + strSmall2 + "0" + strSmall;
+                string fullSQL = str1SQL + id + strSmall2 + textBox1.Text + strSmall2 + textBox3.Text + strSmall2 + textBox2.Text + strSmall2 + "0" + strSmall2 + 0 + strSmall2 + 0 + strSmall;
                 OleDbCommand command = new OleDbCommand(fullSQL, conn);
                 OleDbDataReader reader = command.ExecuteReader();
                 reader.Close();
