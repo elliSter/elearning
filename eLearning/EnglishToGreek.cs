@@ -213,12 +213,16 @@ namespace eLearning
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label4.Hide();
+            //design
+            button1.Show();
+            label3.Show();
             pictureBox1.Hide();
             //button1.Text = " Submit ";
             button1.Text = "Submit";
             button1.BackColor = Color.DarkSlateGray;
             button1.ForeColor = Color.White;
+            //
+
             OleDbConnection conn = new OleDbConnection();
             string appPath = Application.StartupPath;
             conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/eLearning_acc.accdb";
@@ -229,7 +233,7 @@ namespace eLearning
 
             if ((groupBox1.Controls[0].Text.Equals(EnglishToGreek.cor_answ)|| groupBox1.Controls[0].Text.Equals(" "+EnglishToGreek.cor_answ)) && radioButton3.Checked)
             {
-                
+
                 new_cor = EnglishToGreek.temp_cor + 1;
                 EnglishToGreek.temp_cor = new_cor;
                 strSQL = "UPDATE Accounts123 SET Correct4=" + new_cor + " WHERE ID=" + startForm.temp_id;

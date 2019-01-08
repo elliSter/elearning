@@ -39,7 +39,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.logOut = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.menuButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
@@ -50,12 +49,13 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button1.Location = new System.Drawing.Point(340, 390);
+            this.button1.Location = new System.Drawing.Point(188, 400);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 51);
             this.button1.TabIndex = 0;
             this.button1.Text = "START";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
@@ -141,6 +141,7 @@
             this.label3.Size = new System.Drawing.Size(103, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Correct: ";
+            this.label3.Visible = false;
             // 
             // button2
             // 
@@ -168,27 +169,15 @@
             this.logOut.TabStop = false;
             this.logOut.Click += new System.EventHandler(this.logOut_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label4.Image = global::eLearning.Properties.Resources.back;
-            this.label4.Location = new System.Drawing.Point(141, 21);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(222, 42);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Press  Start!";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
             // menuButton
             // 
             this.menuButton.BackColor = System.Drawing.Color.DarkSlateGray;
             this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menuButton.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.menuButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.menuButton.Location = new System.Drawing.Point(186, 390);
+            this.menuButton.Location = new System.Drawing.Point(27, 21);
             this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(109, 51);
+            this.menuButton.Size = new System.Drawing.Size(88, 50);
             this.menuButton.TabIndex = 8;
             this.menuButton.Text = "Back to Menu";
             this.menuButton.UseVisualStyleBackColor = false;
@@ -207,6 +196,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.button1_Click);
             // 
             // EnglishToGreek
             // 
@@ -216,7 +206,6 @@
             this.ClientSize = new System.Drawing.Size(499, 461);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuButton);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.logOut);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
@@ -226,7 +215,7 @@
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EnglishToGreek";
-            this.Text = "Reading";
+            this.Text = "eΛearning";
             this.Load += new System.EventHandler(this.Practise_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -249,7 +238,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox logOut;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button menuButton;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

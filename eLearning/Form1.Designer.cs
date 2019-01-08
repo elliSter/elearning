@@ -134,6 +134,7 @@
             this.soundOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.soundOff.TabIndex = 7;
             this.soundOff.TabStop = false;
+            this.soundOff.Visible = false;
             this.soundOff.Click += new System.EventHandler(this.soundOff_Click);
             // 
             // soundOn
@@ -166,7 +167,7 @@
             this.Controls.Add(this.soundOn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "startForm";
-            this.Text = "Welcome";
+            this.Text = "Welcome - eΛearning";
             this.Load += new System.EventHandler(this.startForm_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.soundOff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.soundOn)).EndInit();

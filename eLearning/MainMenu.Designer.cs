@@ -100,6 +100,7 @@
             this.soundOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.soundOff.TabIndex = 3;
             this.soundOff.TabStop = false;
+            this.soundOff.Visible = false;
             this.soundOff.Click += new System.EventHandler(this.soundOff_Click);
             // 
             // axWindowsMediaPlayer1
@@ -167,7 +168,7 @@
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainMenu";
-            this.Text = "Main Menu";
+            this.Text = "Main Menu - eΛearning";
             this.Load += new System.EventHandler(this.MainMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logOut)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.soundOff)).EndInit();

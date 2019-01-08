@@ -120,14 +120,14 @@ namespace eLearning
         private void soundOff_Click(object sender, EventArgs e)
         {
             soundOff.Visible = false;
-            player.controls.stop();
+            player.controls.play();
             soundOn.Visible = true;
         }
 
         private void soundOn_Click_1(object sender, EventArgs e)
         {
             soundOn.Visible = false;
-            player.controls.play();
+            player.controls.stop();
             soundOff.Visible = true;
         }
 
