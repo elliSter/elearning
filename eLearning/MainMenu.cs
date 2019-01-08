@@ -115,5 +115,30 @@ namespace eLearning
 
 
         }
+
+        private void credits_Click(object sender, EventArgs e)
+        {
+            EnglishToGreek.en_gr = 0;
+            player.controls.stop();
+            this.Close();
+            thread = new Thread(openCredits);
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+        }
+
+        private void openCredits(object obj)
+        {
+            Application.Run(new Credits());
+        }
+
+        private void credits_MouseEnter(object sender, EventArgs e)
+        {
+            credits.BackColor = Color.CadetBlue;
+        }
+
+        private void credits_MouseLeave(object sender, EventArgs e)
+        {
+            credits.BackColor = Color.DarkSlateGray;
+        }
     }
 }

@@ -47,7 +47,7 @@
             // logOut
             // 
             this.logOut.BackgroundImage = global::eLearning.Properties.Resources.back;
-            this.logOut.Cursor = System.Windows.Forms.Cursors.No;
+            this.logOut.Cursor = System.Windows.Forms.Cursors.Default;
             this.logOut.Image = ((System.Drawing.Image)(resources.GetObject("logOut.Image")));
             this.logOut.Location = new System.Drawing.Point(290, 12);
             this.logOut.Name = "logOut";
@@ -138,10 +138,14 @@
             this.credits.TabIndex = 6;
             this.credits.Text = "CREDITS";
             this.credits.UseVisualStyleBackColor = false;
+            this.credits.Click += new System.EventHandler(this.credits_Click);
+            this.credits.MouseEnter += new System.EventHandler(this.credits_MouseEnter);
+            this.credits.MouseLeave += new System.EventHandler(this.credits_MouseLeave);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::eLearning.Properties.Resources.back;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Help;
             this.pictureBox1.Image = global::eLearning.Properties.Resources.VisualEditor___Icon___Help_svg;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";

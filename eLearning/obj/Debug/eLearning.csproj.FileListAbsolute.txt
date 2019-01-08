@@ -19,3 +19,4 @@ C:\Users\Elli\source\repos\eLearning\eLearning\obj\Debug\eLearning.Help.resource
 C:\Users\Elli\source\repos\elearning\eLearning\obj\Debug\eLearning.startForm.resources
 C:\Users\Elli\Source\Repos\elearning\eLearning\obj\Debug\eLearning.EnglishToGreek.resources
 C:\Users\Elli\Source\Repos\elearning\eLearning\obj\Debug\eLearning.GreekToEn.resources
+C:\Users\Elli\Source\Repos\elearning\eLearning\obj\Debug\eLearning.Credits.resources

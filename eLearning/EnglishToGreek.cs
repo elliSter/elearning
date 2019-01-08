@@ -357,33 +357,52 @@ namespace eLearning
         private void radioButton1_MouseEnter(object sender, EventArgs e)
         {
             radioButton1.ForeColor = Color.DarkSlateGray;
+            radioButton1.BackgroundImage = global::eLearning.Properties.Resources.backHighlighted2;
         }
 
         private void radioButton1_MouseLeave(object sender, EventArgs e)
         {
             radioButton1.ForeColor = Color.White;
+            radioButton1.BackgroundImage = global::eLearning.Properties.Resources.back;
         }
 
         private void radioButton2_MouseEnter(object sender, EventArgs e)
         {
             radioButton2.ForeColor = Color.DarkSlateGray;
+            radioButton2.BackgroundImage = global::eLearning.Properties.Resources.backHighlighted2;
         }
 
         private void radioButton2_MouseLeave(object sender, EventArgs e)
         {
             radioButton2.ForeColor = Color.White;
+            radioButton2.BackgroundImage = global::eLearning.Properties.Resources.back;
         }
 
         private void radioButton3_MouseLeave(object sender, EventArgs e)
         {
             radioButton3.ForeColor = Color.White;
+            radioButton3.BackgroundImage= global::eLearning.Properties.Resources.back;
         }
 
         private void radioButton3_MouseEnter(object sender, EventArgs e)
         {
             radioButton3.ForeColor = Color.DarkSlateGray;
-            //radioButton1.BackgroundImage = global::eLearning.Properties.Resources.backHighlighted;
+            radioButton3.BackgroundImage = global::eLearning.Properties.Resources.backHighlighted2;
 
+        }
+
+        private void soundOn_Click(object sender, EventArgs e)
+        {
+            soundOn.Visible = false;
+            player.controls.stop();
+            soundOff.Visible = true;
+        }
+
+        private void soundOff_Click(object sender, EventArgs e)
+        {
+            soundOff.Visible = false;
+            player.controls.play();
+            soundOn.Visible = true;
         }
     }
 }

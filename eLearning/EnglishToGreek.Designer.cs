@@ -41,13 +41,20 @@
             this.logOut = new System.Windows.Forms.PictureBox();
             this.menuButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.soundOff = new System.Windows.Forms.PictureBox();
+            this.soundOn = new System.Windows.Forms.PictureBox();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soundOff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soundOn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(188, 400);
@@ -174,7 +181,7 @@
             // logOut
             // 
             this.logOut.BackgroundImage = global::eLearning.Properties.Resources.back;
-            this.logOut.Cursor = System.Windows.Forms.Cursors.No;
+            this.logOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logOut.Image = ((System.Drawing.Image)(resources.GetObject("logOut.Image")));
             this.logOut.Location = new System.Drawing.Point(430, 21);
             this.logOut.Name = "logOut";
@@ -203,7 +210,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::eLearning.Properties.Resources.back;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::eLearning.Properties.Resources.Play;
             this.pictureBox1.Location = new System.Drawing.Point(47, 81);
             this.pictureBox1.Name = "pictureBox1";
@@ -213,12 +220,52 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // soundOff
+            // 
+            this.soundOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("soundOff.BackgroundImage")));
+            this.soundOff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.soundOff.Image = ((System.Drawing.Image)(resources.GetObject("soundOff.Image")));
+            this.soundOff.Location = new System.Drawing.Point(420, 405);
+            this.soundOff.Name = "soundOff";
+            this.soundOff.Size = new System.Drawing.Size(36, 36);
+            this.soundOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.soundOff.TabIndex = 20;
+            this.soundOff.TabStop = false;
+            this.soundOff.Visible = false;
+            this.soundOff.Click += new System.EventHandler(this.soundOff_Click);
+            // 
+            // soundOn
+            // 
+            this.soundOn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("soundOn.BackgroundImage")));
+            this.soundOn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.soundOn.Image = ((System.Drawing.Image)(resources.GetObject("soundOn.Image")));
+            this.soundOn.Location = new System.Drawing.Point(420, 405);
+            this.soundOn.Name = "soundOn";
+            this.soundOn.Size = new System.Drawing.Size(36, 36);
+            this.soundOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.soundOn.TabIndex = 22;
+            this.soundOn.TabStop = false;
+            this.soundOn.Click += new System.EventHandler(this.soundOn_Click);
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(420, 405);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(36, 36);
+            this.axWindowsMediaPlayer1.TabIndex = 21;
+            this.axWindowsMediaPlayer1.Visible = false;
+            // 
             // EnglishToGreek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.ClientSize = new System.Drawing.Size(499, 461);
+            this.Controls.Add(this.soundOff);
+            this.Controls.Add(this.soundOn);
+            this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuButton);
             this.Controls.Add(this.logOut);
@@ -236,6 +283,9 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logOut)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soundOff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soundOn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,5 +305,8 @@
         private System.Windows.Forms.PictureBox logOut;
         private System.Windows.Forms.Button menuButton;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox soundOff;
+        private System.Windows.Forms.PictureBox soundOn;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }

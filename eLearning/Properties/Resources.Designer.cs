@@ -104,6 +104,26 @@ namespace eLearning.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backHighlighted {
+            get {
+                object obj = ResourceManager.GetObject("backHighlighted", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap backHighlighted2 {
+            get {
+                object obj = ResourceManager.GetObject("backHighlighted2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap file_20171024_30561_ph2byj {
             get {
                 object obj = ResourceManager.GetObject("file-20171024-30561-ph2byj", resourceCulture);

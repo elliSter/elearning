@@ -121,6 +121,9 @@
   <data name="kisspng-youtube-play-button-computer-icons-clip-art-help-5ac448544305d0.3241900115228130122745" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kisspng-youtube-play-button-computer-icons-clip-art-help-5ac448544305d0.3241900115228130122745.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="backHighlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backHighlighted1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="file-20171024-30561-ph2byj" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file-20171024-30561-ph2byj.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -132,6 +135,9 @@
   </data>
   <data name="VisualEditor_-_Icon_-_Help.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VisualEditor_-_Icon_-_Help.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kitty-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kitty-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,7 +163,7 @@
   <data name="intro_cream_of_crop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\intro_cream_of_crop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Play" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="backHighlighted2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backHighlighted2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
