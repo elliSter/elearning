@@ -61,7 +61,7 @@
             this.logOut.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.logOut.Cursor = System.Windows.Forms.Cursors.Default;
             this.logOut.Image = ((System.Drawing.Image)(resources.GetObject("logOut.Image")));
-            this.logOut.Location = new System.Drawing.Point(290, 12);
+            this.logOut.Location = new System.Drawing.Point(306, 21);
             this.logOut.Name = "logOut";
             this.logOut.Size = new System.Drawing.Size(26, 25);
             this.logOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -75,7 +75,7 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(100, 98);
+            this.button1.Location = new System.Drawing.Point(116, 107);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(146, 51);
             this.button1.TabIndex = 1;
@@ -91,7 +91,7 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(100, 164);
+            this.button2.Location = new System.Drawing.Point(116, 173);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(146, 51);
             this.button2.TabIndex = 2;
@@ -106,7 +106,7 @@
             this.soundOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("soundOff.BackgroundImage")));
             this.soundOff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.soundOff.Image = ((System.Drawing.Image)(resources.GetObject("soundOff.Image")));
-            this.soundOff.Location = new System.Drawing.Point(280, 278);
+            this.soundOff.Location = new System.Drawing.Point(296, 287);
             this.soundOff.Name = "soundOff";
             this.soundOff.Size = new System.Drawing.Size(36, 36);
             this.soundOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -118,7 +118,7 @@
             // axWindowsMediaPlayer1
             // 
             this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(280, 278);
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(296, 287);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(36, 36);
@@ -130,7 +130,7 @@
             this.soundOn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("soundOn.BackgroundImage")));
             this.soundOn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.soundOn.Image = ((System.Drawing.Image)(resources.GetObject("soundOn.Image")));
-            this.soundOn.Location = new System.Drawing.Point(280, 278);
+            this.soundOn.Location = new System.Drawing.Point(296, 287);
             this.soundOn.Name = "soundOn";
             this.soundOn.Size = new System.Drawing.Size(36, 36);
             this.soundOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -144,7 +144,7 @@
             this.credits.Cursor = System.Windows.Forms.Cursors.Hand;
             this.credits.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.credits.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.credits.Location = new System.Drawing.Point(12, 278);
+            this.credits.Location = new System.Drawing.Point(28, 287);
             this.credits.Name = "credits";
             this.credits.Size = new System.Drawing.Size(75, 36);
             this.credits.TabIndex = 6;
@@ -159,7 +159,7 @@
             this.pictureBox1.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Help;
             this.pictureBox1.Image = global::eLearning.Properties.Resources.VisualEditor___Icon___Help_svg;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 52);
+            this.pictureBox1.Location = new System.Drawing.Point(28, 61);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(35, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -172,7 +172,7 @@
             // 
             this.pictureBox2.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.pictureBox2.Image = global::eLearning.Properties.Resources.Actions_rating_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(28, 21);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -185,7 +185,7 @@
             // 
             this.pictureBox3.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.pictureBox3.Image = global::eLearning.Properties.Resources.Actions_rating_icon;
-            this.pictureBox3.Location = new System.Drawing.Point(43, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(59, 21);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -198,7 +198,7 @@
             // 
             this.pictureBox4.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.pictureBox4.Image = global::eLearning.Properties.Resources.Actions_rating_icon;
-            this.pictureBox4.Location = new System.Drawing.Point(74, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(90, 21);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(25, 25);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -211,7 +211,7 @@
             // 
             this.pictureBox5.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.pictureBox5.Image = global::eLearning.Properties.Resources.NotRating_icon;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox5.Location = new System.Drawing.Point(28, 21);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(25, 25);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -223,7 +223,7 @@
             // 
             this.pictureBox6.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.pictureBox6.Image = global::eLearning.Properties.Resources.NotRating_icon;
-            this.pictureBox6.Location = new System.Drawing.Point(43, 12);
+            this.pictureBox6.Location = new System.Drawing.Point(59, 21);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(25, 25);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -235,7 +235,7 @@
             // 
             this.pictureBox7.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.pictureBox7.Image = global::eLearning.Properties.Resources.NotRating_icon;
-            this.pictureBox7.Location = new System.Drawing.Point(74, 12);
+            this.pictureBox7.Location = new System.Drawing.Point(90, 21);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(25, 25);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -249,7 +249,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(345, 339);
+            this.ClientSize = new System.Drawing.Size(358, 339);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -265,8 +265,8 @@
             this.Controls.Add(this.soundOn);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(361, 378);
-            this.MinimumSize = new System.Drawing.Size(361, 378);
+            this.MaximumSize = new System.Drawing.Size(374, 378);
+            this.MinimumSize = new System.Drawing.Size(374, 378);
             this.Name = "MainMenu";
             this.Text = "Main Menu - eΛearning";
             this.Load += new System.EventHandler(this.MainMenu_Load);

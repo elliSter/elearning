@@ -63,9 +63,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.Location = new System.Drawing.Point(40, 84);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 23);
@@ -75,9 +75,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
             this.label2.Location = new System.Drawing.Point(45, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 23);
@@ -89,7 +89,7 @@
             this.signUp.BackColor = System.Drawing.Color.DarkSlateGray;
             this.signUp.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.signUp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.signUp.Location = new System.Drawing.Point(178, 201);
+            this.signUp.Location = new System.Drawing.Point(183, 201);
             this.signUp.Name = "signUp";
             this.signUp.Size = new System.Drawing.Size(89, 35);
             this.signUp.TabIndex = 4;
@@ -104,7 +104,7 @@
             this.logIn.BackColor = System.Drawing.Color.DarkSlateGray;
             this.logIn.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.logIn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.logIn.Location = new System.Drawing.Point(83, 201);
+            this.logIn.Location = new System.Drawing.Point(88, 201);
             this.logIn.Name = "logIn";
             this.logIn.Size = new System.Drawing.Size(89, 35);
             this.logIn.TabIndex = 5;
@@ -117,7 +117,7 @@
             // forgottenPassword
             // 
             this.forgottenPassword.Font = new System.Drawing.Font("Comic Sans MS", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.forgottenPassword.Location = new System.Drawing.Point(112, 251);
+            this.forgottenPassword.Location = new System.Drawing.Point(117, 251);
             this.forgottenPassword.Name = "forgottenPassword";
             this.forgottenPassword.Size = new System.Drawing.Size(118, 25);
             this.forgottenPassword.TabIndex = 6;
@@ -170,7 +170,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::eLearning.Properties.Resources.back;
-            this.ClientSize = new System.Drawing.Size(354, 339);
+            this.ClientSize = new System.Drawing.Size(358, 339);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.soundOff);
             this.Controls.Add(this.forgottenPassword);
@@ -182,8 +182,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.soundOn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(370, 378);
-            this.MinimumSize = new System.Drawing.Size(370, 378);
+            this.MaximumSize = new System.Drawing.Size(374, 378);
+            this.MinimumSize = new System.Drawing.Size(374, 378);
             this.Name = "startForm";
             this.Text = "Welcome - eΛearning";
             this.Load += new System.EventHandler(this.startForm_Load_1);

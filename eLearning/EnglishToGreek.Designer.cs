@@ -222,7 +222,7 @@
             // 
             // soundOff
             // 
-            this.soundOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("soundOff.BackgroundImage")));
+            this.soundOff.BackColor = System.Drawing.Color.Transparent;
             this.soundOff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.soundOff.Image = ((System.Drawing.Image)(resources.GetObject("soundOff.Image")));
             this.soundOff.Location = new System.Drawing.Point(420, 405);
@@ -236,7 +236,7 @@
             // 
             // soundOn
             // 
-            this.soundOn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("soundOn.BackgroundImage")));
+            this.soundOn.BackColor = System.Drawing.Color.Transparent;
             this.soundOn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.soundOn.Image = ((System.Drawing.Image)(resources.GetObject("soundOn.Image")));
             this.soundOn.Location = new System.Drawing.Point(420, 405);
@@ -276,7 +276,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(515, 500);
             this.MinimumSize = new System.Drawing.Size(515, 500);
             this.Name = "EnglishToGreek";
             this.Text = "eΛearning";
