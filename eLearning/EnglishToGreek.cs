@@ -16,7 +16,7 @@ namespace eLearning
     public partial class EnglishToGreek : Form
     {
         //Public Variables
-        //commit test ellh noob
+        //commit test 
         public static int quest_id;
         public static int answ1_id;
         public static int answ2_id;
