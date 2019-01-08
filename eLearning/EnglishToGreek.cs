@@ -78,7 +78,7 @@ namespace eLearning
             string fa1 = "2";
             string fa2 = "3";
 
-            //jh
+            
             if (EnglishToGreek.en_gr == 0)
             {
 
@@ -134,7 +134,7 @@ namespace eLearning
 
             }
             //=======================================================================================================================================================================================
-            /*uh
+            
             if (EnglishToGreek.en_gr == 1)
             {
                 OleDbConnection conn2 = new OleDbConnection();
@@ -194,7 +194,7 @@ namespace eLearning
 
             }
             
-            */
+            
 
 
             //===============================================================
