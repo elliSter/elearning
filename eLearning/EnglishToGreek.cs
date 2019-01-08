@@ -39,9 +39,9 @@ namespace eLearning
 
         }
 
-        private void Practise_Load(object sender, EventArgs e)
+        private void EnglishToGreek_Load(object sender, EventArgs e)
         {
-            startForm.temp_id = 1;
+            //startForm.temp_id = 1;
             string appPath = Application.StartupPath;
             OleDbConnection conn = new OleDbConnection();
             conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/eLearning_acc.accdb";
@@ -215,10 +215,28 @@ namespace eLearning
             button1.Text = "Submit";
             button1.BackColor = Color.DarkSlateGray;
             button1.ForeColor = Color.White;
+            string appPath = Application.StartupPath;
             //
+            //=================================================================================
+            OleDbConnection conn2 = new OleDbConnection();
+            conn2.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/eLearning_acc.accdb";
+            conn2.Open();
+            string strSQL2 = "SELECT * FROM Accounts123";
+            OleDbCommand command2 = new OleDbCommand(strSQL2, conn2);
+            OleDbDataReader reader2 = command2.ExecuteReader();
+            while (reader2.Read())
+            {
+                if (startForm.temp_id == Convert.ToInt32(reader2["ID"]))
+                {
+                    temp_cor = Convert.ToInt32(reader2["Correct4"]);
+                    label3.Text = "Correct: " + temp_cor;
+                    Console.WriteLine("==============================================================================================================ID reader2 = " + reader2["ID"] + " || ID temp_id = " + startForm.temp_id + " || temp_cor = " + temp_cor + " || Reader2 Correct = " + reader2["Correct4"]);
+                }
+            }
+            //=================================================================================
 
             OleDbConnection conn = new OleDbConnection();
-            string appPath = Application.StartupPath;
+            
             conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/eLearning_acc.accdb";
             conn.Open();
             int new_cor;
@@ -235,6 +253,7 @@ namespace eLearning
                 OleDbDataReader reader = command.ExecuteReader();
                 //groupBox1.Controls[0].Text += "_hi";
                 Console.WriteLine(groupBox1.Controls[0].Text + "---------------------===========================CORRECT!!!===========================---------------------");
+                label3.Text = "Correct: " + EnglishToGreek.temp_cor + " || " + new_cor;
             }
             else if ((groupBox1.Controls[1].Text.Equals(EnglishToGreek.cor_answ) || groupBox1.Controls[1].Text.Equals(" " + EnglishToGreek.cor_answ)) && radioButton2.Checked)
             {
@@ -245,6 +264,7 @@ namespace eLearning
                 OleDbDataReader reader = command.ExecuteReader();
                 //groupBox1.Controls[1].Text += "_hi";
                 Console.WriteLine(groupBox1.Controls[1].Text + "---------------------===========================CORRECT!!!===========================---------------------");
+                label3.Text = "Correct: " + EnglishToGreek.temp_cor + " || " + new_cor;
 
             }
             else if ((groupBox1.Controls[2].Text.Equals(EnglishToGreek.cor_answ) || groupBox1.Controls[2].Text.Equals(" " + EnglishToGreek.cor_answ)) && radioButton1.Checked)
@@ -256,6 +276,7 @@ namespace eLearning
                 OleDbDataReader reader = command.ExecuteReader();
                 //groupBox1.Controls[2].Text += "_hi";
                 Console.WriteLine(groupBox1.Controls[2].Text + "---------------------===========================CORRECT!!!===========================---------------------");
+                label3.Text = "Correct: " + EnglishToGreek.temp_cor + " || " + new_cor;
             }
             else
             {
@@ -266,7 +287,7 @@ namespace eLearning
             Console.WriteLine("Radio 1 = " + radioButton1.Checked);
             Console.WriteLine("Radio 2 = " + radioButton2.Checked);
             Console.WriteLine("Radio 3 = " + radioButton3.Checked);
-            Practise_Load(this, e);
+            EnglishToGreek_Load(this, e);
         }
 
 
