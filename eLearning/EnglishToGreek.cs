@@ -51,6 +51,7 @@ namespace eLearning
             OleDbCommand command = new OleDbCommand(strSQL, conn);
             OleDbDataReader reader = command.ExecuteReader();
             //int temp_correct;
+            string strSQL_lvl = "SELECT * FROM Accounts123";
             while (reader.Read())
             {
                 //label3.Text = "Correct: " + temp_cor;
@@ -60,8 +61,86 @@ namespace eLearning
                     temp_cor = Convert.ToInt32(reader["Correct4"]);
                     label3.Text = "Correct: " + temp_cor;
                     Console.WriteLine("==============================================================================================================ID LINE = "+temp_cor);
+                    //=-------------------------------------- LEVEL --------------------------------------
+                    if (temp_cor < 50)
+                    {
+                        strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 0 + " WHERE ID = " + startForm.temp_id;
+                    }
+                    else
+                    {
+                        if (temp_cor < 100)
+                        {
+                            strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 1 + " WHERE ID = " + startForm.temp_id;
+                        }
+                        else
+                        {
+                            if (temp_cor < 150)
+                            {
+                                strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 2 + " WHERE ID = " + startForm.temp_id;
+                            }
+                            else
+                            {
+                                if (temp_cor < 200)
+                                {
+                                    strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 3 + " WHERE ID = " + startForm.temp_id;
+                                }
+                                else
+                                {
+                                    if (temp_cor < 250)
+                                    {
+                                        strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 4 + " WHERE ID = " + startForm.temp_id;
+                                    }
+                                    else
+                                    {
+                                        if (temp_cor < 300)
+                                        {
+                                            strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 5 + " WHERE ID = " + startForm.temp_id;
+                                        }
+                                        else
+                                        {
+                                            if (temp_cor < 350)
+                                            {
+                                                strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 6 + " WHERE ID = " + startForm.temp_id;
+                                            }
+                                            else
+                                            {
+                                                if (temp_cor < 400)
+                                                {
+                                                    strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 7 + " WHERE ID = " + startForm.temp_id;
+                                                }
+                                                else
+                                                {
+                                                    if (temp_cor < 450)
+                                                    {
+                                                        strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 8 + " WHERE ID = " + startForm.temp_id;
+                                                    }
+                                                    else
+                                                    {
+                                                        if (temp_cor < 500)
+                                                        {
+                                                            strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 9 + " WHERE ID = " + startForm.temp_id;
+                                                        }
+                                                        else
+                                                        {
+                                                            if (temp_cor < 550)
+                                                            {
+                                                                strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 10 + " WHERE ID = " + startForm.temp_id;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    OleDbCommand command2 = new OleDbCommand(strSQL_lvl, conn);
+                    OleDbDataReader reader2 = command2.ExecuteReader();
+                    //=-------------------------------------- LEVEL --------------------------------------
                 }
-                
+
             }
 
 
@@ -78,6 +157,9 @@ namespace eLearning
             string cor = "1";
             string fa1 = "2";
             string fa2 = "3";
+
+
+            
 
             
             if (EnglishToGreek.en_gr == 0)

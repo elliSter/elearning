@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Media;
 using WMPLib;
 using System.Threading;
-
+using System.Data.OleDb;
 
 namespace eLearning
 {
@@ -147,6 +147,18 @@ namespace eLearning
             pictureBox2.Show();
             //hide
             pictureBox5.Hide();
+            //----------------------- NEW CHANGES ----------------------------
+            
+            string appPath = Application.StartupPath;
+            OleDbConnection conn = new OleDbConnection();
+            conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/eLearning_acc.accdb";
+            conn.Open();
+            string strSQL="UPDATE Accounts123 SET Rating6=" + 1 + " WHERE ID=" + startForm.temp_id;
+            OleDbCommand command = new OleDbCommand(strSQL, conn);
+            OleDbDataReader reader = command.ExecuteReader();
+            
+            Console.WriteLine("pB5 - Clicked!");
+            Console.WriteLine("1");
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -157,6 +169,17 @@ namespace eLearning
             //hide
             pictureBox5.Hide();
             pictureBox6.Hide();
+            Console.WriteLine("pB6 - Clicked!");
+
+            string appPath = Application.StartupPath;
+            OleDbConnection conn = new OleDbConnection();
+            conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/eLearning_acc.accdb";
+            conn.Open();
+            string strSQL = "UPDATE Accounts123 SET Rating6=" + 2 + " WHERE ID=" + startForm.temp_id;
+            OleDbCommand command = new OleDbCommand(strSQL, conn);
+            OleDbDataReader reader = command.ExecuteReader();
+            Console.WriteLine("2");
+
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
@@ -169,6 +192,16 @@ namespace eLearning
             pictureBox5.Hide();
             pictureBox6.Hide();
             pictureBox7.Hide();
+            Console.WriteLine("pB7 - Clicked!");
+
+            string appPath = Application.StartupPath;
+            OleDbConnection conn = new OleDbConnection();
+            conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/eLearning_acc.accdb";
+            conn.Open();
+            string strSQL = "UPDATE Accounts123 SET Rating6=" + 3 + " WHERE ID=" + startForm.temp_id;
+            OleDbCommand command = new OleDbCommand(strSQL, conn);
+            OleDbDataReader reader = command.ExecuteReader();
+            Console.WriteLine("3");
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -182,6 +215,15 @@ namespace eLearning
             pictureBox2.Hide();
             pictureBox3.Hide();
             pictureBox4.Hide();
+            Console.WriteLine("pB2 - Clicked!");
+            string appPath = Application.StartupPath;
+            OleDbConnection conn = new OleDbConnection();
+            conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/eLearning_acc.accdb";
+            conn.Open();
+            string strSQL = "UPDATE Accounts123 SET Rating6=" + 0 + " WHERE ID=" + startForm.temp_id;
+            OleDbCommand command = new OleDbCommand(strSQL, conn);
+            OleDbDataReader reader = command.ExecuteReader();
+            Console.WriteLine("0");
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -195,6 +237,15 @@ namespace eLearning
             pictureBox5.Hide();
             pictureBox3.Hide();
             pictureBox4.Hide();
+            Console.WriteLine("pB3 - Clicked!");
+            string appPath = Application.StartupPath;
+            OleDbConnection conn = new OleDbConnection();
+            conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/eLearning_acc.accdb";
+            conn.Open();
+            string strSQL = "UPDATE Accounts123 SET Rating6=" + 1 + " WHERE ID=" + startForm.temp_id;
+            OleDbCommand command = new OleDbCommand(strSQL, conn);
+            OleDbDataReader reader = command.ExecuteReader();
+            Console.WriteLine("1");
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -208,6 +259,15 @@ namespace eLearning
             pictureBox5.Hide();
             pictureBox6.Hide();
             pictureBox4.Hide();
+            Console.WriteLine("pB4 - Clicked!");
+            string appPath = Application.StartupPath;
+            OleDbConnection conn = new OleDbConnection();
+            conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/eLearning_acc.accdb";
+            conn.Open();
+            string strSQL = "UPDATE Accounts123 SET Rating6=" + 2 + " WHERE ID=" + startForm.temp_id;
+            OleDbCommand command = new OleDbCommand(strSQL, conn);
+            OleDbDataReader reader = command.ExecuteReader();
+            Console.WriteLine("2");
         }
     }
 }
