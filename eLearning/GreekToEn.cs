@@ -214,7 +214,8 @@ namespace eLearning
         {
             label4.Hide();
             pictureBox1.Hide();
-            button1.Text = " Submit ";
+            // button1.Text = " Submit ";
+            button1.Text = "Submit";
             button1.BackColor = Color.DarkSlateGray;
             button1.ForeColor = Color.White;
             OleDbConnection conn = new OleDbConnection();
