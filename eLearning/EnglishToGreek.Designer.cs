@@ -48,7 +48,8 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(188, 400);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 51);
@@ -57,15 +58,18 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label1.Location = new System.Drawing.Point(142, 114);
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(194, 121);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 33);
+            this.label1.Size = new System.Drawing.Size(108, 51);
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
             // 
@@ -73,13 +77,13 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label2.Location = new System.Drawing.Point(34, 114);
+            this.label2.Font = new System.Drawing.Font("Segoe Print", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(86, 121);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 31);
+            this.label2.Size = new System.Drawing.Size(102, 47);
             this.label2.TabIndex = 2;
             this.label2.Text = "Word:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // groupBox1
             // 
@@ -87,7 +91,8 @@
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.groupBox1.Font = new System.Drawing.Font("Segoe Print", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Location = new System.Drawing.Point(92, 194);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(344, 182);
@@ -98,44 +103,54 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.radioButton3.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.radioButton3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.radioButton3.Location = new System.Drawing.Point(43, 125);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(133, 28);
+            this.radioButton3.Size = new System.Drawing.Size(166, 37);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "radioButton3";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.MouseEnter += new System.EventHandler(this.radioButton3_MouseEnter);
+            this.radioButton3.MouseLeave += new System.EventHandler(this.radioButton3_MouseLeave);
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.radioButton2.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.radioButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.radioButton2.Location = new System.Drawing.Point(43, 83);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(133, 28);
+            this.radioButton2.Size = new System.Drawing.Size(166, 37);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "radioButton2";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.MouseEnter += new System.EventHandler(this.radioButton2_MouseEnter);
+            this.radioButton2.MouseLeave += new System.EventHandler(this.radioButton2_MouseLeave);
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.radioButton1.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.radioButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.radioButton1.Location = new System.Drawing.Point(43, 43);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(133, 28);
+            this.radioButton1.Size = new System.Drawing.Size(166, 37);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "radioButton1";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.MouseEnter += new System.EventHandler(this.radioButton1_MouseEnter);
+            this.radioButton1.MouseLeave += new System.EventHandler(this.radioButton1_MouseLeave);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(12, 416);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 25);
@@ -190,7 +205,7 @@
             this.pictureBox1.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox1.Image = global::eLearning.Properties.Resources.Play;
-            this.pictureBox1.Location = new System.Drawing.Point(40, 89);
+            this.pictureBox1.Location = new System.Drawing.Point(47, 81);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(419, 295);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

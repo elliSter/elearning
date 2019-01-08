@@ -204,12 +204,6 @@ namespace eLearning
 
         }
 
-        
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -346,6 +340,50 @@ namespace eLearning
         private void openMainMenu(object obj)
         {
             Application.Run(new MainMenu());
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.LightCyan;
+            button1.ForeColor = Color.DarkSlateGray;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.DarkSlateGray;
+            button1.ForeColor = Color.LightCyan;
+        }
+
+        private void radioButton1_MouseEnter(object sender, EventArgs e)
+        {
+            radioButton1.ForeColor = Color.DarkSlateGray;
+        }
+
+        private void radioButton1_MouseLeave(object sender, EventArgs e)
+        {
+            radioButton1.ForeColor = Color.White;
+        }
+
+        private void radioButton2_MouseEnter(object sender, EventArgs e)
+        {
+            radioButton2.ForeColor = Color.DarkSlateGray;
+        }
+
+        private void radioButton2_MouseLeave(object sender, EventArgs e)
+        {
+            radioButton2.ForeColor = Color.White;
+        }
+
+        private void radioButton3_MouseLeave(object sender, EventArgs e)
+        {
+            radioButton3.ForeColor = Color.White;
+        }
+
+        private void radioButton3_MouseEnter(object sender, EventArgs e)
+        {
+            radioButton3.ForeColor = Color.DarkSlateGray;
+            //radioButton1.BackgroundImage = global::eLearning.Properties.Resources.backHighlighted;
+
         }
     }
 }
