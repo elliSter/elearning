@@ -44,6 +44,7 @@
             this.soundOff = new System.Windows.Forms.PictureBox();
             this.soundOn = new System.Windows.Forms.PictureBox();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -164,6 +165,7 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Correct: ";
             this.label3.Visible = false;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // button2
             // 
@@ -257,12 +259,26 @@
             this.axWindowsMediaPlayer1.TabIndex = 21;
             this.axWindowsMediaPlayer1.Visible = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(32, 391);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 25);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Level: ";
+            this.label4.Visible = false;
+            // 
             // EnglishToGreek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.ClientSize = new System.Drawing.Size(499, 461);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.soundOff);
             this.Controls.Add(this.soundOn);
             this.Controls.Add(this.axWindowsMediaPlayer1);
@@ -309,5 +325,6 @@
         private System.Windows.Forms.PictureBox soundOff;
         private System.Windows.Forms.PictureBox soundOn;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.Label label4;
     }
 }

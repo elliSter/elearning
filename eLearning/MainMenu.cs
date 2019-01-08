@@ -24,6 +24,7 @@ namespace eLearning
             InitializeComponent();
             player.URL = @"betterdays.mp3";
             player.controls.play();
+            label4.Text = "Level: " + EnglishToGreek.lvl;
         }
 
         private void logOut_Click(object sender, EventArgs e)

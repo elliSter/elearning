@@ -24,6 +24,8 @@ namespace eLearning
         public static int en_gr = 0;
         public static string cor_answ;
         public static int temp_cor;
+        public static int lvl;
+        
 
         //for sounds
         WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
@@ -62,69 +64,80 @@ namespace eLearning
                     label3.Text = "Correct: " + temp_cor;
                     Console.WriteLine("==============================================================================================================ID LINE = "+temp_cor);
                     //=-------------------------------------- LEVEL --------------------------------------
-                    if (temp_cor < 50)
+                    if (temp_cor < 10)
                     {
                         strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 0 + " WHERE ID = " + startForm.temp_id;
+                        lvl = 0;
                     }
                     else
                     {
-                        if (temp_cor < 100)
+                        if (temp_cor < 50)
                         {
                             strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 1 + " WHERE ID = " + startForm.temp_id;
+                            lvl = 1;
                         }
                         else
                         {
-                            if (temp_cor < 150)
+                            if (temp_cor < 100)
                             {
                                 strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 2 + " WHERE ID = " + startForm.temp_id;
+                                lvl = 2;
                             }
                             else
                             {
                                 if (temp_cor < 200)
                                 {
                                     strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 3 + " WHERE ID = " + startForm.temp_id;
+                                    lvl = 3;
                                 }
                                 else
                                 {
-                                    if (temp_cor < 250)
+                                    if (temp_cor < 350)
                                     {
                                         strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 4 + " WHERE ID = " + startForm.temp_id;
+                                        lvl = 4;
                                     }
                                     else
                                     {
-                                        if (temp_cor < 300)
+                                        if (temp_cor < 500)
                                         {
                                             strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 5 + " WHERE ID = " + startForm.temp_id;
+                                            lvl = 5;
                                         }
                                         else
                                         {
-                                            if (temp_cor < 350)
+                                            if (temp_cor < 700)
                                             {
                                                 strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 6 + " WHERE ID = " + startForm.temp_id;
+                                                lvl = 6;
                                             }
                                             else
                                             {
-                                                if (temp_cor < 400)
+                                                if (temp_cor < 1000)
                                                 {
                                                     strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 7 + " WHERE ID = " + startForm.temp_id;
+                                                    lvl = 7;
                                                 }
                                                 else
                                                 {
-                                                    if (temp_cor < 450)
+                                                    if (temp_cor < 2000)
                                                     {
                                                         strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 8 + " WHERE ID = " + startForm.temp_id;
+                                                        lvl = 8;
                                                     }
                                                     else
                                                     {
-                                                        if (temp_cor < 500)
+                                                        if (temp_cor < 3000)
                                                         {
                                                             strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 9 + " WHERE ID = " + startForm.temp_id;
+                                                            lvl = 9;
                                                         }
                                                         else
                                                         {
-                                                            if (temp_cor < 550)
+                                                            if (temp_cor < 5000)
                                                             {
                                                                 strSQL_lvl = "UPDATE Accounts123 SET Level5 = " + 10 + " WHERE ID = " + startForm.temp_id;
+                                                                lvl = 10;
                                                             }
                                                         }
                                                     }
@@ -291,6 +304,8 @@ namespace eLearning
         private void button1_Click(object sender, EventArgs e)
         {
             //design
+            label4.Show();
+            label4.Text = "Level: " + lvl;
             button1.Show();
             label3.Show();
             pictureBox1.Hide();
@@ -323,6 +338,7 @@ namespace eLearning
             conn.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/eLearning_acc.accdb";
             conn.Open();
             int new_cor;
+            
             string strSQL;
 
 
@@ -364,6 +380,7 @@ namespace eLearning
             else
             {
                 Console.WriteLine("--------------------------------WRONG ANSWER--------------------------------");
+                
             }
             Console.WriteLine("groupBox1.Controls[0].Text = _"+ groupBox1.Controls[0].Text + "_ || groupBox1.Controls[1].Text = _"+ groupBox1.Controls[1].Text + "_ || groupBox1.Controls[2].Text = _" + groupBox1.Controls[2].Text+"_");
             Console.WriteLine("Practise.cor_answ = _"+ EnglishToGreek.cor_answ +"_");
@@ -507,6 +524,11 @@ namespace eLearning
             soundOff.Visible = false;
             player.controls.play();
             soundOn.Visible = true;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
