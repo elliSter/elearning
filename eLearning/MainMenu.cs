@@ -140,5 +140,74 @@ namespace eLearning
         {
             credits.BackColor = Color.DarkSlateGray;
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            //show
+            pictureBox2.Show();
+            //hide
+            pictureBox5.Hide();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            //show
+            pictureBox2.Show();
+            pictureBox3.Show();
+            //hide
+            pictureBox5.Hide();
+            pictureBox6.Hide();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            //show
+            pictureBox2.Show();
+            pictureBox3.Show();
+            pictureBox4.Show();
+            //hide
+            pictureBox5.Hide();
+            pictureBox6.Hide();
+            pictureBox7.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            //no rate
+            //show
+            pictureBox5.Show();
+            pictureBox6.Show();
+            pictureBox7.Show();
+            //hide
+            pictureBox2.Hide();
+            pictureBox3.Hide();
+            pictureBox4.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            //rate as 1 star
+            //show
+            pictureBox2.Show();
+            pictureBox6.Show();
+            pictureBox7.Show();
+            //hide
+            pictureBox5.Hide();
+            pictureBox3.Hide();
+            pictureBox4.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            //rate 2 stars
+            //show
+            pictureBox2.Show();
+            pictureBox3.Show();
+            pictureBox7.Show();
+            //hide
+            pictureBox5.Hide();
+            pictureBox6.Hide();
+            pictureBox4.Hide();
+        }
     }
 }

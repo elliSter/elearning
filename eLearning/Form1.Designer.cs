@@ -38,6 +38,7 @@
             this.forgottenPassword = new System.Windows.Forms.Button();
             this.soundOff = new System.Windows.Forms.PictureBox();
             this.soundOn = new System.Windows.Forms.PictureBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.soundOff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.soundOn)).BeginInit();
             this.SuspendLayout();
@@ -45,7 +46,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox1.Location = new System.Drawing.Point(165, 86);
+            this.textBox1.Location = new System.Drawing.Point(155, 84);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(129, 23);
             this.textBox1.TabIndex = 0;
@@ -53,10 +54,11 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox2.Location = new System.Drawing.Point(165, 126);
+            this.textBox2.Location = new System.Drawing.Point(155, 124);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(129, 23);
             this.textBox2.TabIndex = 1;
+            this.textBox2.UseSystemPasswordChar = true;
             // 
             // label1
             // 
@@ -64,7 +66,7 @@
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(50, 86);
+            this.label1.Location = new System.Drawing.Point(40, 84);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 23);
             this.label1.TabIndex = 2;
@@ -76,7 +78,7 @@
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(55, 126);
+            this.label2.Location = new System.Drawing.Point(45, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 23);
             this.label2.TabIndex = 3;
@@ -87,7 +89,7 @@
             this.signUp.BackColor = System.Drawing.Color.DarkSlateGray;
             this.signUp.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.signUp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.signUp.Location = new System.Drawing.Point(178, 195);
+            this.signUp.Location = new System.Drawing.Point(178, 201);
             this.signUp.Name = "signUp";
             this.signUp.Size = new System.Drawing.Size(89, 35);
             this.signUp.TabIndex = 4;
@@ -102,7 +104,7 @@
             this.logIn.BackColor = System.Drawing.Color.DarkSlateGray;
             this.logIn.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.logIn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.logIn.Location = new System.Drawing.Point(83, 195);
+            this.logIn.Location = new System.Drawing.Point(83, 201);
             this.logIn.Name = "logIn";
             this.logIn.Size = new System.Drawing.Size(89, 35);
             this.logIn.TabIndex = 5;
@@ -115,7 +117,7 @@
             // forgottenPassword
             // 
             this.forgottenPassword.Font = new System.Drawing.Font("Comic Sans MS", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.forgottenPassword.Location = new System.Drawing.Point(112, 245);
+            this.forgottenPassword.Location = new System.Drawing.Point(112, 251);
             this.forgottenPassword.Name = "forgottenPassword";
             this.forgottenPassword.Size = new System.Drawing.Size(118, 25);
             this.forgottenPassword.TabIndex = 6;
@@ -128,7 +130,7 @@
             this.soundOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("soundOff.BackgroundImage")));
             this.soundOff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.soundOff.Image = ((System.Drawing.Image)(resources.GetObject("soundOff.Image")));
-            this.soundOff.Location = new System.Drawing.Point(297, 291);
+            this.soundOff.Location = new System.Drawing.Point(306, 291);
             this.soundOff.Name = "soundOff";
             this.soundOff.Size = new System.Drawing.Size(36, 36);
             this.soundOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -142,7 +144,7 @@
             this.soundOn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("soundOn.BackgroundImage")));
             this.soundOn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.soundOn.Image = ((System.Drawing.Image)(resources.GetObject("soundOn.Image")));
-            this.soundOn.Location = new System.Drawing.Point(297, 291);
+            this.soundOn.Location = new System.Drawing.Point(306, 291);
             this.soundOn.Name = "soundOn";
             this.soundOn.Size = new System.Drawing.Size(36, 36);
             this.soundOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -150,12 +152,26 @@
             this.soundOn.TabStop = false;
             this.soundOn.Click += new System.EventHandler(this.soundOn_Click_1);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBox1.Location = new System.Drawing.Point(290, 130);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(53, 17);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.Text = "Show";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // startForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::eLearning.Properties.Resources.back;
-            this.ClientSize = new System.Drawing.Size(345, 339);
+            this.ClientSize = new System.Drawing.Size(354, 339);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.soundOff);
             this.Controls.Add(this.forgottenPassword);
             this.Controls.Add(this.logIn);
@@ -166,6 +182,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.soundOn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(370, 378);
+            this.MinimumSize = new System.Drawing.Size(370, 378);
             this.Name = "startForm";
             this.Text = "Welcome - eΛearning";
             this.Load += new System.EventHandler(this.startForm_Load_1);
@@ -187,6 +205,7 @@
         private System.Windows.Forms.Button forgottenPassword;
         private System.Windows.Forms.PictureBox soundOff;
         private System.Windows.Forms.PictureBox soundOn;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

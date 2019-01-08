@@ -378,7 +378,7 @@ namespace eLearning
         private void radioButton1_MouseEnter(object sender, EventArgs e)
         {
             radioButton1.ForeColor = Color.DarkSlateGray;
-            radioButton1.BackgroundImage = global::eLearning.Properties.Resources.backHighlighted2;
+            radioButton1.BackgroundImage = global::eLearning.Properties.Resources.backhighl;
         }
 
         private void radioButton1_MouseLeave(object sender, EventArgs e)
@@ -390,7 +390,7 @@ namespace eLearning
         private void radioButton2_MouseEnter(object sender, EventArgs e)
         {
             radioButton2.ForeColor = Color.DarkSlateGray;
-            radioButton2.BackgroundImage = global::eLearning.Properties.Resources.backHighlighted2;
+            radioButton2.BackgroundImage = global::eLearning.Properties.Resources.backhighl;
         }
 
         private void radioButton2_MouseLeave(object sender, EventArgs e)
@@ -408,7 +408,7 @@ namespace eLearning
         private void radioButton3_MouseEnter(object sender, EventArgs e)
         {
             radioButton3.ForeColor = Color.DarkSlateGray;
-            radioButton3.BackgroundImage = global::eLearning.Properties.Resources.backHighlighted2;
+            radioButton3.BackgroundImage = global::eLearning.Properties.Resources.backhighl;
 
         }
 
