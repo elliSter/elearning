@@ -75,7 +75,7 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(116, 107);
+            this.button1.Location = new System.Drawing.Point(110, 108);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(146, 51);
             this.button1.TabIndex = 1;
@@ -91,7 +91,7 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(116, 173);
+            this.button2.Location = new System.Drawing.Point(110, 174);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(146, 51);
             this.button2.TabIndex = 2;
@@ -159,7 +159,7 @@
             this.pictureBox1.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Help;
             this.pictureBox1.Image = global::eLearning.Properties.Resources.VisualEditor___Icon___Help_svg;
-            this.pictureBox1.Location = new System.Drawing.Point(28, 61);
+            this.pictureBox1.Location = new System.Drawing.Point(22, 62);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(35, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -172,7 +172,7 @@
             // 
             this.pictureBox2.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.pictureBox2.Image = global::eLearning.Properties.Resources.Actions_rating_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(28, 21);
+            this.pictureBox2.Location = new System.Drawing.Point(22, 21);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -185,7 +185,7 @@
             // 
             this.pictureBox3.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.pictureBox3.Image = global::eLearning.Properties.Resources.Actions_rating_icon;
-            this.pictureBox3.Location = new System.Drawing.Point(59, 21);
+            this.pictureBox3.Location = new System.Drawing.Point(53, 21);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -198,7 +198,7 @@
             // 
             this.pictureBox4.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.pictureBox4.Image = global::eLearning.Properties.Resources.Actions_rating_icon;
-            this.pictureBox4.Location = new System.Drawing.Point(90, 21);
+            this.pictureBox4.Location = new System.Drawing.Point(84, 21);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(25, 25);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -211,7 +211,7 @@
             // 
             this.pictureBox5.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.pictureBox5.Image = global::eLearning.Properties.Resources.NotRating_icon;
-            this.pictureBox5.Location = new System.Drawing.Point(28, 21);
+            this.pictureBox5.Location = new System.Drawing.Point(22, 21);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(25, 25);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -223,7 +223,7 @@
             // 
             this.pictureBox6.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.pictureBox6.Image = global::eLearning.Properties.Resources.NotRating_icon;
-            this.pictureBox6.Location = new System.Drawing.Point(59, 21);
+            this.pictureBox6.Location = new System.Drawing.Point(53, 21);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(25, 25);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -235,7 +235,7 @@
             // 
             this.pictureBox7.BackgroundImage = global::eLearning.Properties.Resources.back;
             this.pictureBox7.Image = global::eLearning.Properties.Resources.NotRating_icon;
-            this.pictureBox7.Location = new System.Drawing.Point(90, 21);
+            this.pictureBox7.Location = new System.Drawing.Point(84, 21);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(25, 25);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

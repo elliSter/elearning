@@ -50,8 +50,7 @@ namespace eLearning
             string strSQL = "SELECT * FROM Accounts123";
             OleDbCommand command = new OleDbCommand(strSQL, conn);
             OleDbDataReader reader = command.ExecuteReader();
-            bool no_info = false;
-            bool wrong_info = false;
+   
             bool nerrorb = false;
             temp_id = 0;
             while (reader.Read())
