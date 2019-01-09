@@ -402,7 +402,7 @@ namespace eLearning
             Console.WriteLine("Radio 2 = " + radioButton2.Checked);
             Console.WriteLine("Radio 3 = " + radioButton3.Checked);
 
-
+            conn.Close();
             EnglishToGreek_Load(this, e);
         }
 
@@ -545,6 +545,20 @@ namespace eLearning
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            label4.Show();
+            label4.Text = "Level: " + lvl;
+            button1.Show();
+            label3.Show();
+            pictureBox1.Hide();
+            //button1.Text = " Submit ";
+            button1.Text = "Submit";
+            button1.BackColor = Color.DarkSlateGray;
+            button1.ForeColor = Color.White;
+            EnglishToGreek_Load(this, e);
         }
     }
 }
