@@ -125,12 +125,6 @@ namespace eLearning
 
 
 
-
-        /*/-----------------------------
-        if (textBox3.Text != textBox4.Text)
-        {
-            MessageBox.Show("Password and Confirm Password dont match");
-        } */
-        //}
+   
     }
 }

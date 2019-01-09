@@ -46,7 +46,7 @@
             this.cancel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.cancel.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.cancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cancel.Location = new System.Drawing.Point(95, 244);
+            this.cancel.Location = new System.Drawing.Point(188, 244);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(81, 36);
             this.cancel.TabIndex = 0;
@@ -59,7 +59,7 @@
             this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(183, 244);
+            this.button2.Location = new System.Drawing.Point(83, 244);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(81, 36);
             this.button2.TabIndex = 1;

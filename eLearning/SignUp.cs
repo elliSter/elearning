@@ -69,7 +69,7 @@ namespace eLearning
             string str1SQL = "INSERT INTO Accounts123 (ID,Username1,Password2,Fullname3,Correct4,Level5,Rating6) VALUES('";
             string strSmall = "')";
             string strSmall2 = "','";
-            if (textBox4.Text.Equals("cat") || textBox4.Text.Equals("γάτα") || textBox4.Text.Equals("γατα") || textBox4.Text.Equals("gata"))
+            if (textBox4.Text.Equals("cat") || textBox4.Text.Equals("γάτα") || textBox4.Text.Equals("Γάτα") || textBox4.Text.Equals("γατα") || textBox4.Text.Equals("gata") || textBox4.Text.Equals("ΓΑΤΑ") || textBox4.Text.Equals("CAT") || textBox4.Text.Equals("Cat"))
             {
                 
                 string fullSQL = str1SQL + id + strSmall2 + textBox1.Text + strSmall2 + textBox3.Text + strSmall2 + textBox2.Text + strSmall2 + "0" + strSmall2 + 0 + strSmall2 + 0 + strSmall;
@@ -83,6 +83,14 @@ namespace eLearning
                 thread = new Thread(openMainMenu);
                 thread.SetApartmentState(ApartmentState.STA);
                 thread.Start();
+            }else if(textBox3.Text!=textBox5.Text)
+                {
+                MessageBox.Show("Passwords, don't match");
+            }
+            
+            else if ( textBox1.Text == "" || textBox2.Text=="" || textBox3.Text == "" || textBox4.Text == "")
+            {
+                MessageBox.Show("Please fill the empty boxes");
             }
             else
             {
