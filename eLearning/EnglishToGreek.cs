@@ -304,6 +304,20 @@ namespace eLearning
         private void button1_Click(object sender, EventArgs e)
         {
             //design
+            string appPath = Application.StartupPath;
+            OleDbConnection conn3 = new OleDbConnection();
+            conn3.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + appPath + "/eLearning_acc.accdb";
+            conn3.Open();
+            string strSQL3 = "SELECT * FROM Accounts123";
+            OleDbCommand command3 = new OleDbCommand(strSQL3, conn3);
+            OleDbDataReader reader3 = command3.ExecuteReader();
+            while (reader3.Read())
+            {
+                if (startForm.temp_id == Convert.ToInt32(reader3["ID"]))
+                {
+                    EnglishToGreek.lvl = Convert.ToInt32(reader3["Level5"]);
+                }
+            }
             label4.Show();
             label4.Text = "Level: " + lvl;
             button1.Show();
@@ -313,7 +327,7 @@ namespace eLearning
             button1.Text = "Submit";
             button1.BackColor = Color.DarkSlateGray;
             button1.ForeColor = Color.White;
-            string appPath = Application.StartupPath;
+            
             //
             //=================================================================================
             OleDbConnection conn2 = new OleDbConnection();
@@ -387,6 +401,8 @@ namespace eLearning
             Console.WriteLine("Radio 1 = " + radioButton1.Checked);
             Console.WriteLine("Radio 2 = " + radioButton2.Checked);
             Console.WriteLine("Radio 3 = " + radioButton3.Checked);
+
+
             EnglishToGreek_Load(this, e);
         }
 
