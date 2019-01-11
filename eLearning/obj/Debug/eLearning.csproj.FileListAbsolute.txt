@@ -18,7 +18,6 @@ C:\Users\Elli\source\repos\eLearning\eLearning\obj\Debug\eLearning.SignUp.resour
 C:\Users\Elli\source\repos\eLearning\eLearning\obj\Debug\eLearning.Help.resources
 C:\Users\Elli\source\repos\elearning\eLearning\obj\Debug\eLearning.startForm.resources
 C:\Users\Elli\Source\Repos\elearning\eLearning\obj\Debug\eLearning.EnglishToGreek.resources
-C:\Users\Elli\Source\Repos\elearning\eLearning\obj\Debug\eLearning.GreekToEn.resources
 C:\Users\Elli\Source\Repos\elearning\eLearning\obj\Debug\eLearning.Credits.resources
 C:\Users\Monster\Documents\GitHub\elearning\eLearning\bin\Debug\eLearning.exe.config
 C:\Users\Monster\Documents\GitHub\elearning\eLearning\bin\Debug\eLearning.exe
