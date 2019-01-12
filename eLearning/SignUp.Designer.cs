@@ -115,7 +115,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(102, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 19);
@@ -145,6 +145,7 @@
             this.soundOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.soundOff.TabIndex = 17;
             this.soundOff.TabStop = false;
+            this.soundOff.Visible = false;
             this.soundOff.Click += new System.EventHandler(this.soundOff_Click);
             // 
             // soundOn
@@ -158,7 +159,6 @@
             this.soundOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.soundOn.TabIndex = 18;
             this.soundOn.TabStop = false;
-            this.soundOn.Visible = false;
             this.soundOn.Click += new System.EventHandler(this.soundOn_Click_1);
             // 
             // textBox5
@@ -174,7 +174,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(26, 155);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(132, 19);
@@ -187,7 +187,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(107, 211);
+            this.label6.Location = new System.Drawing.Point(80, 211);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 30);
             this.label6.TabIndex = 23;
@@ -198,8 +198,8 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(165, 218);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label4.Location = new System.Drawing.Point(158, 216);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(20, 23);
             this.label4.TabIndex = 22;
@@ -208,10 +208,10 @@
             // 
             // textBox4
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox4.Location = new System.Drawing.Point(186, 218);
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.textBox4.Location = new System.Drawing.Point(186, 215);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(81, 23);
+            this.textBox4.Size = new System.Drawing.Size(81, 26);
             this.textBox4.TabIndex = 21;
             this.textBox4.Text = "1230";
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged_1);
@@ -240,7 +240,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SignUp";
             this.Text = "Sign Up";
-            this.Load += new System.EventHandler(this.SignUp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.soundOff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.soundOn)).EndInit();
             this.ResumeLayout(false);

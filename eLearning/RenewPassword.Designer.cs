@@ -158,7 +158,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(165, 215);
+            this.label5.Location = new System.Drawing.Point(162, 215);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(20, 23);
             this.label5.TabIndex = 18;
@@ -166,10 +166,10 @@
             // 
             // textBox5
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.textBox5.Location = new System.Drawing.Point(188, 214);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(81, 23);
+            this.textBox5.Size = new System.Drawing.Size(81, 26);
             this.textBox5.TabIndex = 17;
             this.textBox5.Text = "1230";
             // 
@@ -179,7 +179,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(107, 207);
+            this.label6.Location = new System.Drawing.Point(78, 210);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 30);
             this.label6.TabIndex = 19;
