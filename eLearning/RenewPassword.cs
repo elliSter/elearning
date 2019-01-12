@@ -15,13 +15,23 @@ namespace eLearning
     public partial class Renew_Password : Form
     {
         Thread thread;
+        int apot,gamie;
         WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
+
+        
+        
 
         public Renew_Password()
         {
             InitializeComponent();
             //player.URL = @"C:\Users\Elli\source\repos\WindowsFormsApp1\onceagain.mp3";
             //player.controls.play();
+
+            //for "captcha" authantication
+            //Captcha(label6);
+            apot= Captcha(label6);
+
+            
         }
 
 
@@ -55,6 +65,7 @@ namespace eLearning
 
         }
 
+
         private void button2_Click(object sender, EventArgs e)
         {
 
@@ -69,33 +80,50 @@ namespace eLearning
             bool nerrorb = false;
             String strSQL2;
             startForm.temp_id = 0;
+
+            Random random = new Random();
+
+
+            gamie = Convert.ToInt32(textBox5.Text);
+            Console.WriteLine(apot + "-----" + gamie);
+
             while (reader.Read())
             {
-                if (textBox1.Text.Equals(reader["Username1"]))
+                
+                if(gamie != apot)
                 {
-                    if (textBox2.Text.Equals(reader["Password2"]))
-                    {
-                        if (textBox3.Text == textBox4.Text)
-                        { 
-                            startForm.temp_id = Convert.ToInt32(reader["ID"]);
-
-                            strSQL2 = "UPDATE Accounts123 SET Password2=" + textBox4.Text + " WHERE ID=" + startForm.temp_id;
-
-                            OleDbCommand command2 = new OleDbCommand(strSQL2, conn);
-                            OleDbDataReader reader2 = command2.ExecuteReader();
-
-                            nerrorb = true;
-                            player.controls.stop();
-                            this.Close();
-                            thread = new Thread(openMainMenuForm);
-                            thread.SetApartmentState(ApartmentState.STA);
-                            thread.Start();
-                        }
-
-
-                    }
+                    apot = Captcha(label6);
                 }
+                if (gamie == apot)
+                 {
 
+                    if (textBox1.Text.Equals(reader["Username1"]))
+                    {
+                        if (textBox2.Text.Equals(reader["Password2"]))
+                        {
+                            if (textBox3.Text == textBox4.Text)
+                            {
+                                startForm.temp_id = Convert.ToInt32(reader["ID"]);
+
+                                strSQL2 = "UPDATE Accounts123 SET Password2=" + textBox4.Text + " WHERE ID=" + startForm.temp_id;
+
+                                OleDbCommand command2 = new OleDbCommand(strSQL2, conn);
+                                OleDbDataReader reader2 = command2.ExecuteReader();
+
+                                nerrorb = true;
+                                player.controls.stop();
+                                this.Close();
+                                thread = new Thread(openMainMenuForm);
+                                thread.SetApartmentState(ApartmentState.STA);
+                                thread.Start();
+                            }
+
+
+                        }
+                    }
+                
+                }
+                
             }
             MessageBoxButtons buttons = MessageBoxButtons.OK;
             string message = "You did not enter valid Information.";
@@ -123,8 +151,31 @@ namespace eLearning
             Application.Run(new MainMenu());
         }
 
-
-
-   
+        public static int Captcha(Label label)
+        {
+            int n1, n2, operation , apot=0;
+            Random rnd = new Random();
+            n1 = rnd.Next(1, 11);
+            n2 = rnd.Next(1, 11);
+           
+            operation = rnd.Next(1, 4);
+            
+            switch (operation)
+            {
+                case 1:
+                    label.Text = (n1 + " + " + n2);
+                    apot = n1 + n2;
+                    break;
+                case 2:
+                    label.Text = (n1 + " - " + n2);
+                    apot = n1 - n2;
+                    break;
+                case 3:
+                    label.Text = (n1 + " * " + n2);
+                    apot = n1 * n2;
+                    break;
+            }
+            return apot;
+        }
     }
 }

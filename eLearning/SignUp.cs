@@ -16,12 +16,13 @@ namespace eLearning
     {
         Thread thread;
         WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
-
+        int apot,gamie;
         public SignUp()
         {
             InitializeComponent();
             player.URL = @"onceagain.mp3";
             player.controls.play();
+            apot = Renew_Password.Captcha(label6);
         }
 
         private void SignUp_Load(object sender, EventArgs e)
@@ -53,9 +54,16 @@ namespace eLearning
             string str2 = "select * from Accounts123";
             OleDbCommand command2 = new OleDbCommand(str2, conn);
             OleDbDataReader reader2 = command2.ExecuteReader();
-            long id2 = 0;            
+            long id2 = 0;
+
+            gamie = Convert.ToInt32(textBox4.Text);
+            Console.WriteLine(apot + "-----" + gamie);
+
+
             while (reader2.Read())
             {
+                
+               
                 Console.WriteLine("____" + reader2["ID"]);
                 if (id2< Convert.ToInt64(reader2["ID"]))
                 {
@@ -69,7 +77,7 @@ namespace eLearning
             string str1SQL = "INSERT INTO Accounts123 (ID,Username1,Password2,Fullname3,Correct4,Level5,Rating6) VALUES('";
             string strSmall = "')";
             string strSmall2 = "','";
-            if (textBox4.Text.Equals("cat") || textBox4.Text.Equals("γάτα") || textBox4.Text.Equals("Γάτα") || textBox4.Text.Equals("γατα") || textBox4.Text.Equals("gata") || textBox4.Text.Equals("ΓΑΤΑ") || textBox4.Text.Equals("CAT") || textBox4.Text.Equals("Cat"))
+            if (gamie == apot)
             {
                 
                 string fullSQL = str1SQL + id + strSmall2 + textBox1.Text + strSmall2 + textBox3.Text + strSmall2 + textBox2.Text + strSmall2 + "0" + strSmall2 + 0 + strSmall2 + 0 + strSmall;
@@ -94,7 +102,8 @@ namespace eLearning
             }
             else
             {
-                MessageBox.Show("Wrong animal, try again");
+                MessageBox.Show("Wrong number, try again");
+                apot = Renew_Password.Captcha(label6);
                 Console.WriteLine("Something went wrong with your registration.");
             }
             
@@ -127,6 +136,16 @@ namespace eLearning
         }
 
         private void soundOff_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged_1(object sender, EventArgs e)
         {
 
         }
